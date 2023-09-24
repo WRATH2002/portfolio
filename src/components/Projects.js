@@ -35,10 +35,12 @@ const Projects = () => {
               </span>
             </div>
             <div className="w-full flex justify-center items-center mt-[38px]">
-              <button className="whitespace-nowrap w-[150px] flex justify-center items-center font-semibold text-[18px]">
-                Live Demo{" "}
-                <FaArrowUpRightFromSquare className="ml-[15px] text-[16px]" />
-              </button>
+              <a href="https://playynext.netlify.app/" target="_blank">
+                <button className="whitespace-nowrap w-[150px] flex justify-center items-center font-semibold text-[18px]">
+                  Live Demo{" "}
+                  <FaArrowUpRightFromSquare className="ml-[15px] text-[16px]" />
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -68,10 +70,12 @@ const Projects = () => {
               </span>
             </div>
             <div className="w-full flex justify-center items-center mt-[38px]">
-              <button className="whitespace-nowrap w-[150px] flex justify-center items-center font-semibold text-[18px]">
-                Live Demo{" "}
-                <FaArrowUpRightFromSquare className="ml-[15px] text-[16px]" />
-              </button>
+              <a href="https://foodfave.netlify.app/" target="_blank">
+                <button className="whitespace-nowrap w-[150px] flex justify-center items-center font-semibold text-[18px]">
+                  Live Demo{" "}
+                  <FaArrowUpRightFromSquare className="ml-[15px] text-[16px]" />
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -100,10 +104,12 @@ const Projects = () => {
               </span>
             </div>
             <div className="w-full flex justify-center items-center mt-[60px]">
-              <button className="whitespace-nowrap w-[150px] flex justify-center items-center font-semibold text-[18px]">
-                Live Demo{" "}
-                <FaArrowUpRightFromSquare className="ml-[15px] text-[16px]" />
-              </button>
+              <a href="https://squidtictactoe.netlify.app/" target="_blank">
+                <button className="whitespace-nowrap w-[150px] flex justify-center items-center font-semibold text-[18px]">
+                  Live Demo{" "}
+                  <FaArrowUpRightFromSquare className="ml-[15px] text-[16px]" />
+                </button>
+              </a>
             </div>
           </div>
         </div>

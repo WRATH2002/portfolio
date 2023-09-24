@@ -24,16 +24,27 @@ const Home = () => {
                 </span>
                 <span className="flex justify-start items-center mt-[20px] h-[40px]">
                   <span className="flex justify-start items-center  h-[50px] w-[50px]">
-                    <BiLogoLinkedin
-                      className=" text-[30px] cursor-pointer hover:text-[34px]"
-                      style={{ transition: ".3s" }}
-                    />
+                    <a
+                      href="https://www.linkedin.com/in/himadri-purkait-315193272"
+                      target="_blank"
+                    >
+                      <BiLogoLinkedin
+                        className=" text-[30px] cursor-pointer hover:text-[34px]"
+                        style={{ transition: ".3s" }}
+                      />
+                    </a>
                   </span>
+
                   <span className="flex justify-center items-center  mx-[5px] h-[50px] w-[50px]">
-                    <BiLogoGithub
-                      className="flex justify-center items-center text-[30px]   cursor-pointer hover:text-[34px]"
-                      style={{ transition: ".3s" }}
-                    />
+                    <a
+                      href="https://github.com/WRATH2002?tab=repositories"
+                      target="_blank"
+                    >
+                      <BiLogoGithub
+                        className="flex justify-center items-center text-[30px]   cursor-pointer hover:text-[34px]"
+                        style={{ transition: ".3s" }}
+                      />
+                    </a>
                   </span>
                 </span>
               </div>
