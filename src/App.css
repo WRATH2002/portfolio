@@ -18,3 +18,12 @@
   background: rgb(115, 184, 186);
   border-radius: 10px;
 }
+
+.dark {
+  background-color: black;
+  color: white;
+}
+.dark_two {
+  background-color: rgb(38, 38, 38);
+  color: white;
+}
