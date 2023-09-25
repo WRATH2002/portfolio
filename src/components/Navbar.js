@@ -7,6 +7,9 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
+import { BiLogoInstagram } from "react-icons/bi";
+import { BiLogoFacebook } from "react-icons/bi";
+import { BiLogoTwitter } from "react-icons/bi";
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -108,13 +111,40 @@ const Navbar = () => {
             >
               Contact
             </div>
+            <div
+              className="text-[22px] font-semibold w-full flex justify-center items-center mt-[100px]  drop-shadow-lg"
+              // onClick={() => scrollToSection(contact)}
+            >
+              <a href="https://www.instagram.com/himadri.1/" target="_blank">
+                <BiLogoInstagram className="mx-[10px]" />
+              </a>
+              <a
+                href="https://www.facebook.com/Himadri.Artist/"
+                target="_blank"
+              >
+                <BiLogoFacebook className="mx-[10px]" />
+              </a>
+              <a href="">
+                <BiLogoTwitter className="mx-[10px]" />
+              </a>
+            </div>
+            <div
+              className="text-[14px] font-semibold w-full flex justify-center items-center mt-[30px]  drop-shadow-lg"
+              onClick={() => scrollToSection(contact)}
+            >
+              <div className="border border-black w-[40px]"></div>
+            </div>
           </div>
+          <div
+            className="fixed w-full h-[calc(100vh-75px)] mt-[75px] bg-[#00000026]"
+            style={{ zIndex: "4", transition: ".3s" }}
+          ></div>
         </>
       ) : (
         <>
           <div
             className="lg:hidden md:hidden fixed bg-slate-100 w-0 h-[calc(100vh-75px)] mt-[75px] px-0 flex flex-col justify-start items-start"
-            style={{ zIndex: "5", transition: ".3s" }}
+            style={{ zIndex: "5", transition: ".3" }}
           >
             <div className="hidden justify-center items-center mt-[50px] ">
               Home
@@ -129,6 +159,10 @@ const Navbar = () => {
               Contact
             </div>
           </div>
+          <div
+            className="fixed w-full hidden h-[calc(100vh-75px)] mt-[75px] bg-slate-100"
+            style={{ zIndex: "4", transition: ".3s" }}
+          ></div>
         </>
       )}
       <div className="w-full" ref={home}>

@@ -68,7 +68,7 @@ const Home = () => {
             <div className="flex flex-row  mt-[18px] lg:mt-[0px] md:mt-[0px]">
               <img
                 alt="html"
-                className="w-[30px] md:w-[45px] lg:w-[45px] mx-[5px] cursor-pointer ml-[20px]"
+                className="w-[30px] md:w-[45px] lg:w-[45px] mx-[5px] cursor-pointer ml-0 lg:ml-[20px] md:ml-[20px]"
                 src={html}
               ></img>
               <img
