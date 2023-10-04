@@ -205,7 +205,7 @@ const Projects = (props) => {
                   </span>
                 </div>
                 <div className="w-full flex justify-center items-center mt-[20px] lg:mt-[22px] md:mt-[22px]">
-                  <a href="https://getweatherio.netlify.app/" target="_blank">
+                  <a href="https://mycalculatorio.netlify.app/" target="_blank">
                     <button className="whitespace-nowrap w-[150px] flex justify-center items-center font-semibold text-[16px] lg:text-[18px] md:text-[18px]">
                       Live Demo{" "}
                       <FaArrowUpRightFromSquare className="ml-[15px]  text-[14px] lg:text-[16px] md:text-[16px]" />
@@ -413,7 +413,7 @@ const Projects = (props) => {
                   </span>
                 </div>
                 <div className="w-full flex justify-center items-center mt-[20px] lg:mt-[22px] md:mt-[22px]">
-                  <a href="https://getweatherio.netlify.app/" target="_blank">
+                  <a href="https://mycalculatorio.netlify.app/" target="_blank">
                     <button className="whitespace-nowrap w-[150px] flex justify-center items-center font-semibold text-[16px] lg:text-[18px] md:text-[18px]">
                       Live Demo{" "}
                       <FaArrowUpRightFromSquare className="ml-[15px]  text-[14px] lg:text-[16px] md:text-[16px]" />
