@@ -27,3 +27,16 @@
   background-color: rgb(38, 38, 38);
   color: white;
 }
+
+/*  */
+
+.darkStroke {
+  -webkit-text-stroke: 0.7px;
+  -webkit-text-stroke-color: white;
+  color: black;
+}
+.whiteStroke {
+  -webkit-text-stroke: 0.7px;
+  -webkit-text-stroke-color: black;
+  color: white;
+}

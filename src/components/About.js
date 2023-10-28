@@ -13,6 +13,7 @@ const About = (props) => {
               <div className="w-full lg:w-[40%] md:w-[40%] bg-slate-500 rounded-2xl drop-shadow-lg">
                 <img
                   src={pcc}
+                  loading="lazy"
                   className="w-full h-[180px] lg:h-[250px] md:h-[250px] object-cover rounded-2xl"
                 ></img>
               </div>
