@@ -187,7 +187,7 @@ const Projects = (props) => {
               ></img>
               <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] drop-shadow-lg">
                 <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
-                  Weather.IO
+                  Calculator.IO
                 </span>
                 <span className="text-[#747474] mt-[10px] text-justify text-[14px] lg:text-[16px] md:text-[16px]">
                   Calculator.io is a responsive website where user can do any
@@ -471,7 +471,7 @@ const Projects = (props) => {
               <img
                 className="w-full lg:w-[60%] md:w-[60%] rounded-2xl drop-shadow-lg"
                 alt="youtube"
-                src={calcio}
+                src={walleio}
               ></img>
               <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] drop-shadow-lg">
                 <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
