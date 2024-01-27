@@ -40,7 +40,7 @@ function App() {
                   }}
                 />
               </div>
-              <div className="w-full h-[calc(100%-60px)] rounded-lg bg-[#1c1b23] flex flex-col justify-center text-[#888888] px-[60px] py-[40px]">
+              <div className="w-full h-[calc(100%-60px)] mt-[-60px] rounded-lg bg-[#1c1b23] flex flex-col justify-center text-[#888888] px-[60px] py-[40px]">
                 <span
                   className="flex opacity-100 justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576]"
                   style={{ transition: ".9s", transitionDelay: ".4s" }}
@@ -107,7 +107,7 @@ function App() {
                   }}
                 />
               </div>
-              <div className="w-0 overflow-hidden h-[calc(100%-60px)] rounded-lg bg-[#1c1b23] flex flex-col justify-center text-[#888888] px-[0] py-[40px]">
+              <div className="w-0 overflow-hidden h-[calc(100%-60px)] mt-[-60px] rounded-lg bg-[#1c1b23] flex flex-col justify-center text-[#888888] px-[0] py-[40px]">
                 <span className="flex opacity-0 justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576]">
                   <a
                     className="flex"
