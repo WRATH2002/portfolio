@@ -9,6 +9,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 // import Home from "./components/Home";
 // import About from "./components/About";
 // import Projects from "./components/Projects";
@@ -21,14 +22,14 @@ function App() {
     <>
       {/* <Navbar /> */}
       <div
-        className="w-[100%] h-[100svh] bg-[#14131a] flex overflow-y-scroll"
+        className="w-[100%] h-[100vh] bg-[#14131a] flex overflow-y-scroll"
         // style={{ transition: ".3s" }}
       >
         <Sidebar />
         {toggleSidebar == true ? (
           <>
             <div
-              className="w-[300px] h-[100svh] bg-[#1c1b23] fixed z-40"
+              className="w-[300px] h-[100vh] bg-[#1c1b23] fixed z-40"
               style={{ transition: ".3s" }}
             >
               <div className="w-full h-[60px]  flex justify-start items-center ">
@@ -39,25 +40,55 @@ function App() {
                   }}
                 />
               </div>
-              <div className="w-full h-[calc(100%-60px)] rounded-lg bg-[#1c1b23] flex flex-col text-[#888888] px-[60px] py-[40px]">
-                <span className="text-[18px] font-medium text-white">
-                  Socials
+              <div className="w-full h-[calc(100%-60px)] rounded-lg bg-[#1c1b23] flex flex-col justify-center text-[#888888] px-[60px] py-[40px]">
+                <span
+                  className="flex opacity-100 justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576]"
+                  style={{ transition: ".9s", transitionDelay: ".4s" }}
+                >
+                  <a
+                    className="flex"
+                    href="https://www.instagram.com/himadri.1/"
+                  >
+                    <FaInstagram className="mr-[10px] text-[22px] " /> Instagram
+                  </a>
                 </span>
-                <span className="flex justify-start items-center h-[40px] my-[6px] ">
-                  <FaInstagram className="mr-[10px] text-[22px]  text-[#c627e6]" />{" "}
-                  Instagram
+                <span
+                  className="flex opacity-100 justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576]"
+                  style={{ transition: ".9s", transitionDelay: ".5s" }}
+                >
+                  <a
+                    className="flex"
+                    href="https://www.facebook.com/Himadri.Artist"
+                  >
+                    <FaFacebookF className="mr-[10px] text-[22px] " /> Facebook
+                  </a>
                 </span>
-                <span className="flex justify-start items-center h-[40px] my-[6px] ">
-                  <FaFacebookF className="mr-[10px] text-[22px]  text-[#18b6ff]" />{" "}
-                  Facebook
+                <span
+                  className="flex opacity-100 justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]"
+                  style={{ transition: ".9s", transitionDelay: ".6s" }}
+                >
+                  <a className="flex" href="https://github.com/WRATH2002">
+                    <FaGithub className="mr-[10px] text-[22px] " /> Github
+                  </a>
                 </span>
-                <span className="flex justify-start items-center h-[40px] my-[6px]">
-                  <FaGithub className="mr-[10px] text-[22px]  text-[#16c421]" />{" "}
-                  Github
+                <span
+                  className="flex opacity-100 justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]"
+                  style={{ transition: ".9s", transitionDelay: ".7s" }}
+                >
+                  <a
+                    className="flex"
+                    href="https://www.linkedin.com/in/himadri-purkait-315193272/"
+                  >
+                    <FaLinkedinIn className="mr-[10px] text-[22px] " /> Linkedin
+                  </a>
                 </span>
-                <span className="flex justify-start items-center h-[40px] my-[6px]">
-                  <FaLinkedinIn className="mr-[10px] text-[22px]  text-[#1b67ff]" />{" "}
-                  Linkedin
+                <span
+                  className="flex opacity-100 justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]"
+                  style={{ transition: ".9s", transitionDelay: ".8s" }}
+                >
+                  <a className="flex" href="https://twitter.com/himadri_02">
+                    <FaXTwitter className="mr-[10px] text-[22px] " /> Twitter
+                  </a>
                 </span>
               </div>
             </div>
@@ -65,10 +96,10 @@ function App() {
         ) : (
           <>
             <div
-              className="w-[0] h-[100svh] bg-[#1c1b23] fixed z-40"
+              className="w-[0] h-[100vh] bg-[#1c1b23] fixed z-40"
               style={{ transition: ".3s" }}
             >
-              <div className="w-full h-[60px]  flex justify-start items-center ">
+              <div className="w-0 h-[60px]  flex justify-start items-center ">
                 <RxCross2
                   className="flex md:hidden lg:hidden text-[white] text-[22px] ml-[20px]"
                   onClick={() => {
@@ -76,7 +107,42 @@ function App() {
                   }}
                 />
               </div>
-              <div></div>
+              <div className="w-0 overflow-hidden h-[calc(100%-60px)] rounded-lg bg-[#1c1b23] flex flex-col justify-center text-[#888888] px-[0] py-[40px]">
+                <span className="flex opacity-0 justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576]">
+                  <a
+                    className="flex"
+                    href="https://www.instagram.com/himadri.1/"
+                  >
+                    <FaInstagram className="mr-[10px] text-[22px] " /> Instagram
+                  </a>
+                </span>
+                <span className="flex opacity-0 justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576]">
+                  <a
+                    className="flex"
+                    href="https://www.facebook.com/Himadri.Artist"
+                  >
+                    <FaFacebookF className="mr-[10px] text-[22px] " /> Facebook
+                  </a>
+                </span>
+                <span className="flex opacity-0 justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]">
+                  <a className="flex" href="https://github.com/WRATH2002">
+                    <FaGithub className="mr-[10px] text-[22px] " /> Github
+                  </a>
+                </span>
+                <span className="flex opacity-0 justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]">
+                  <a
+                    className="flex"
+                    href="https://www.linkedin.com/in/himadri-purkait-315193272/"
+                  >
+                    <FaLinkedinIn className="mr-[10px] text-[22px] " /> Linkedin
+                  </a>
+                </span>
+                <span className="flex opacity-0 justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]">
+                  <a className="flex" href="https://twitter.com/himadri_02">
+                    <FaXTwitter className="mr-[10px] text-[22px] " /> Twitter
+                  </a>
+                </span>
+              </div>
             </div>
           </>
         )}
