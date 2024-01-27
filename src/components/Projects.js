@@ -4,6 +4,7 @@ import ff from "../assets/img/ff.png";
 import wio from "../assets/img/wiooo.png";
 import calcio from "../assets/img/calcio2.png";
 import walleio from "../assets/img/walle.png";
+import iff from "../assets/img/Chat-X.png";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const Projects = (props) => {
@@ -15,19 +16,19 @@ const Projects = (props) => {
             className="w-full py-[200px] h-auto flex flex-col justify-center bg-[#191919] text-white  items-center "
             style={{ transition: ".3s" }}
           >
-            <div className="w-[75%] lg:w-[60%] md:w-[75%] flex justify-start items-center drop-shadow-lg">
+            <div className="w-[75%] lg:w-[60%] md:w-[75%] flex justify-start items-center none">
               <span className="text-[25px] font-bold">Portfolio</span>
             </div>
             <div
-              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[30px] flex flex-col lg:flex-row md:flex-row bg-[#222222] justify-center items-center p-[20px]  rounded-3xl  drop-shadow-lg"
+              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[30px] flex flex-col lg:flex-row md:flex-row bg-[#222222] justify-center items-center p-[20px]  rounded-3xl  none"
               style={{ transition: ".3s" }}
             >
               <img
-                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl drop-shadow-lg"
+                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl none"
                 alt="youtube"
                 src={yt}
               ></img>
-              <div className="w-full lg:w-[40%] md:w-[40%]  flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] drop-shadow-lg">
+              <div className="w-full lg:w-[40%] md:w-[40%]  flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] none">
                 <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
                   Play Next
                 </span>
@@ -58,15 +59,15 @@ const Projects = (props) => {
               </div>
             </div>
             <div
-              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-[#222222] flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  drop-shadow-lg"
+              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-[#222222] flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  none"
               style={{ transition: ".3s" }}
             >
               <img
-                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl drop-shadow-lg"
+                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl none"
                 alt="youtube"
                 src={ff}
               ></img>
-              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] drop-shadow-lg">
+              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] none">
                 <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
                   Food Fave
                 </span>
@@ -98,15 +99,15 @@ const Projects = (props) => {
               </div>
             </div>
             <div
-              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-[#222222] flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  drop-shadow-lg"
+              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-[#222222] flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  none"
               style={{ transition: ".3s" }}
             >
               <img
-                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl drop-shadow-lg"
+                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl none"
                 alt="youtube"
                 src={ttt}
               ></img>
-              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] drop-shadow-lg">
+              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] none">
                 <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
                   Tic Tac Toe
                 </span>
@@ -137,15 +138,15 @@ const Projects = (props) => {
               </div>
             </div>
             <div
-              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-[#222222] flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  drop-shadow-lg"
+              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-[#222222] flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  none"
               style={{ transition: ".3s" }}
             >
               <img
-                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl drop-shadow-lg"
+                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl none"
                 alt="youtube"
                 src={wio}
               ></img>
-              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] drop-shadow-lg">
+              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] none">
                 <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
                   Weather.IO
                 </span>
@@ -177,15 +178,15 @@ const Projects = (props) => {
               </div>
             </div>
             <div
-              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-[#222222] flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  drop-shadow-lg"
+              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-[#222222] flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  none"
               style={{ transition: ".3s" }}
             >
               <img
-                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl drop-shadow-lg"
+                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl none"
                 alt="youtube"
                 src={calcio}
               ></img>
-              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] drop-shadow-lg">
+              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] none">
                 <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
                   Calculator.IO
                 </span>
@@ -216,15 +217,15 @@ const Projects = (props) => {
               </div>
             </div>
             <div
-              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-[#222222] flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  drop-shadow-lg"
+              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-[#222222] flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  none"
               style={{ transition: ".3s" }}
             >
               <img
-                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl drop-shadow-lg"
+                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl none"
                 alt="youtube"
                 src={walleio}
               ></img>
-              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] drop-shadow-lg">
+              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] none">
                 <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
                   Walle.IO
                 </span>
@@ -248,6 +249,49 @@ const Projects = (props) => {
                 </div>
                 <div className="w-full flex justify-center items-center mt-[20px] lg:mt-[22px] md:mt-[22px]">
                   <a href="https://walleio.netlify.app/" target="_blank">
+                    <button className="whitespace-nowrap w-[150px] flex justify-center items-center font-semibold text-[16px] lg:text-[18px] md:text-[18px]">
+                      Live Demo{" "}
+                      <FaArrowUpRightFromSquare className="ml-[15px]  text-[14px] lg:text-[16px] md:text-[16px]" />
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-[#222222] flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  none"
+              style={{ transition: ".3s" }}
+            >
+              <img
+                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl none"
+                alt="youtube"
+                src={iff}
+              ></img>
+              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] none">
+                <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
+                  Chat-X
+                </span>
+                <span className="text-[#747474] mt-[10px] text-justify text-[14px] lg:text-[16px] md:text-[16px]">
+                  Chat-X is a n to n chatting website where people can talk with
+                  their friends or with any other persons who have account in
+                  chat-x. Made the website using React JS, React Redux,
+                  Firebase, Tailwind and JavaScript.
+                </span>
+                <div className="flex justify-center items-center w-full mt-[20px] text-[14px] lg:text-[16px] md:text-[16px]">
+                  <span className="mx-[10px] font-semibold  flex justify-center items-center rounded-full">
+                    React
+                  </span>
+                  <span className="mx-[10px] font-semibold  flex justify-center items-center rounded-full">
+                    JavaScript
+                  </span>
+                  <span className="mx-[10px] font-semibold  flex justify-center items-center rounded-full">
+                    Firebase
+                  </span>
+                  <span className="mx-[10px] font-semibold  flex justify-center items-center rounded-full">
+                    Tailwind
+                  </span>
+                </div>
+                <div className="w-full flex justify-center items-center mt-[20px] lg:mt-[38px] md:mt-[38px]">
+                  <a href="https://infinityio.netlify.app/" target="_blank">
                     <button className="whitespace-nowrap w-[150px] flex justify-center items-center font-semibold text-[16px] lg:text-[18px] md:text-[18px]">
                       Live Demo{" "}
                       <FaArrowUpRightFromSquare className="ml-[15px]  text-[14px] lg:text-[16px] md:text-[16px]" />
@@ -264,19 +308,19 @@ const Projects = (props) => {
             className="w-full py-[200px] h-auto flex flex-col justify-center bg-slate-100  items-center "
             style={{ transition: ".3s" }}
           >
-            <div className="w-[75%] lg:w-[60%] md:w-[75%] flex justify-start items-center drop-shadow-lg">
+            <div className="w-[75%] lg:w-[60%] md:w-[75%] flex justify-start items-center none">
               <span className="text-[25px] font-bold">Portfolio</span>
             </div>
             <div
-              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[30px] flex flex-col lg:flex-row md:flex-row bg-slate-50 justify-center items-center p-[20px]  rounded-3xl  drop-shadow-lg"
+              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[30px] flex flex-col lg:flex-row md:flex-row bg-slate-50 justify-center items-center p-[20px]  rounded-3xl  none"
               style={{ transition: ".3s" }}
             >
               <img
-                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl drop-shadow-lg"
+                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl none"
                 alt="youtube"
                 src={yt}
               ></img>
-              <div className="w-full lg:w-[40%] md:w-[40%]  flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] drop-shadow-lg">
+              <div className="w-full lg:w-[40%] md:w-[40%]  flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] none">
                 <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
                   Play Next
                 </span>
@@ -307,15 +351,15 @@ const Projects = (props) => {
               </div>
             </div>
             <div
-              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-slate-50 flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  drop-shadow-lg"
+              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-slate-50 flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  none"
               style={{ transition: ".3s" }}
             >
               <img
-                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl drop-shadow-lg"
+                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl none"
                 alt="youtube"
                 src={ff}
               ></img>
-              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] drop-shadow-lg">
+              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] none">
                 <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
                   Food Fave
                 </span>
@@ -347,15 +391,15 @@ const Projects = (props) => {
               </div>
             </div>
             <div
-              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-slate-50 flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  drop-shadow-lg"
+              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-slate-50 flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  none"
               style={{ transition: ".3s" }}
             >
               <img
-                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl drop-shadow-lg"
+                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl none"
                 alt="youtube"
                 src={ttt}
               ></img>
-              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] drop-shadow-lg">
+              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] none">
                 <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
                   Tic Tac Toe
                 </span>
@@ -386,15 +430,15 @@ const Projects = (props) => {
               </div>
             </div>
             <div
-              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-slate-50 flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  drop-shadow-lg"
+              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-slate-50 flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  none"
               style={{ transition: ".3s" }}
             >
               <img
-                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl drop-shadow-lg"
+                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl none"
                 alt="youtube"
                 src={wio}
               ></img>
-              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] drop-shadow-lg">
+              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] none">
                 <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
                   Weather.IO
                 </span>
@@ -426,15 +470,15 @@ const Projects = (props) => {
               </div>
             </div>
             <div
-              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-slate-50 flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  drop-shadow-lg"
+              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-slate-50 flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  none"
               style={{ transition: ".3s" }}
             >
               <img
-                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl drop-shadow-lg"
+                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl none"
                 alt="youtube"
                 src={calcio}
               ></img>
-              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] drop-shadow-lg">
+              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] none">
                 <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
                   Calculator.IO
                 </span>
@@ -465,15 +509,15 @@ const Projects = (props) => {
               </div>
             </div>
             <div
-              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-slate-50 flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  drop-shadow-lg"
+              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-slate-50 flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  none"
               style={{ transition: ".3s" }}
             >
               <img
-                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl drop-shadow-lg"
+                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl none"
                 alt="youtube"
                 src={walleio}
               ></img>
-              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] drop-shadow-lg">
+              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] none">
                 <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
                   Walle.IO
                 </span>
@@ -497,6 +541,49 @@ const Projects = (props) => {
                 </div>
                 <div className="w-full flex justify-center items-center mt-[20px] lg:mt-[22px] md:mt-[22px]">
                   <a href="https://walleio.netlify.app/" target="_blank">
+                    <button className="whitespace-nowrap w-[150px] flex justify-center items-center font-semibold text-[16px] lg:text-[18px] md:text-[18px]">
+                      Live Demo{" "}
+                      <FaArrowUpRightFromSquare className="ml-[15px]  text-[14px] lg:text-[16px] md:text-[16px]" />
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              className="w-[75%] lg:w-[60%] md:w-[75%] mt-[50px] flex bg-slate-50 flex-col lg:flex-row md:flex-row justify-center items-center p-[20px]  rounded-3xl  none"
+              style={{ transition: ".3s" }}
+            >
+              <img
+                className="w-full lg:w-[60%] md:w-[60%] rounded-2xl none"
+                alt="youtube"
+                src={walleio}
+              ></img>
+              <div className="w-full lg:w-[40%] md:w-[40%] flex flex-col justify-center items-start pl-0 lg:pl-[25px] md:pl-[25px] none">
+                <span className="text-[22px] lg:text-[25px] md:text-[25px] font-bold mt-[10px] lg:mt-0 md:mt-0">
+                  Chat-X
+                </span>
+                <span className="text-[#747474] mt-[10px] text-justify text-[14px] lg:text-[16px] md:text-[16px]">
+                  Chat-X is a n to n chatting website where people can talk with
+                  their friends or with any other persons who have account in
+                  chat-x. Made the website using React JS, React Redux,
+                  Firebase, Tailwind and JavaScript.
+                </span>
+                <div className="flex justify-center items-center w-full mt-[20px] text-[14px] lg:text-[16px] md:text-[16px]">
+                  <span className="mx-[10px] font-semibold  flex justify-center items-center rounded-full">
+                    React
+                  </span>
+                  <span className="mx-[10px] font-semibold  flex justify-center items-center rounded-full">
+                    JavaScript
+                  </span>
+                  <span className="mx-[10px] font-semibold  flex justify-center items-center rounded-full">
+                    Firebase
+                  </span>
+                  <span className="mx-[10px] font-semibold  flex justify-center items-center rounded-full">
+                    Tailwind
+                  </span>
+                </div>
+                <div className="w-full flex justify-center items-center mt-[20px] lg:mt-[22px] md:mt-[22px]">
+                  <a href="https://infinityio.netlify.app/" target="_blank">
                     <button className="whitespace-nowrap w-[150px] flex justify-center items-center font-semibold text-[16px] lg:text-[18px] md:text-[18px]">
                       Live Demo{" "}
                       <FaArrowUpRightFromSquare className="ml-[15px]  text-[14px] lg:text-[16px] md:text-[16px]" />

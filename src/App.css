@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.bannerBg {
+  background-image: url(./assets/img/5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* width */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 0px;
 }
 
 /* Track */
@@ -39,4 +46,17 @@
   -webkit-text-stroke: 0.7px;
   -webkit-text-stroke-color: black;
   color: white;
+}
+
+@font-face {
+  font-family: lato;
+  src: url(./assets/font/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: mukta;
+  src: url(./assets/font/Mukta-Regular.ttf);
+}
+@font-face {
+  font-family: one;
+  src: url(./assets/font/MoiraiOne-Regular.ttf);
 }

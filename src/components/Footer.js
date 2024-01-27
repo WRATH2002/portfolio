@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
     <>
-      <div className="w-full h-[100px] bg-black flex justify-center items-center ">
-        <div className="w-full flex  h-full flex-row justify-center items-center text-white text-[14px] lg:text-[16px] md:text-[16px]">
-          <span>Copyright © 2023. All rights are reserved</span>
+      <div className="w-full h-[50px] bg-[#1c1b23] flex justify-center items-center mt-[20px]">
+        <div className="text-[13px] font-[lato] text-[#404044] ">
+          Copyright © 2023. All rights are reserved
         </div>
       </div>
     </>
