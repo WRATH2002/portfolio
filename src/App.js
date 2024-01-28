@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Banner from "./components/Banner";
 import { useState } from "react";
@@ -10,20 +10,14 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
-// import Home from "./components/Home";
-// import About from "./components/About";
-// import Projects from "./components/Projects";
-// import Contact from "./components/Contact";
-// import Footer from "./components/Footer";
 
 function App() {
   const [toggleSidebar, setToggleSidebar] = useState(false);
   return (
     <>
-      {/* <Navbar /> */}
       <div
         className="w-[100%] h-[100vh] bg-[#14131a] flex overflow-y-scroll"
-        // style={{ transition: ".3s" }}
+        style={{ transition: ".3s" }}
       >
         <Sidebar />
         {toggleSidebar == true ? (
@@ -32,7 +26,10 @@ function App() {
               className="w-[300px] h-[100vh] bg-[#1c1b23] fixed z-40"
               style={{ transition: ".3s" }}
             >
-              <div className="w-full h-[60px]  flex justify-start items-center ">
+              <div
+                className="w-full h-[60px]  flex justify-start items-center "
+                style={{ transition: ".3s" }}
+              >
                 <RxCross2
                   className="flex md:hidden lg:hidden text-[white] text-[22px] ml-[20px]"
                   onClick={() => {
@@ -40,7 +37,10 @@ function App() {
                   }}
                 />
               </div>
-              <div className="w-full h-[calc(100%-60px)] mt-[-60px] rounded-lg bg-[#1c1b23] flex flex-col justify-center text-[#888888] px-[60px] py-[40px]">
+              <div
+                className="w-full h-[calc(100%-60px)] mt-[-60px] rounded-lg bg-[#1c1b23] flex flex-col justify-center text-[#888888] px-[60px] py-[40px]"
+                style={{ transition: ".3s" }}
+              >
                 <span
                   className="flex opacity-100 justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576]"
                   style={{ transition: ".9s", transitionDelay: ".4s" }}
@@ -99,7 +99,10 @@ function App() {
               className="w-[0] h-[100vh] bg-[#1c1b23] fixed z-40"
               style={{ transition: ".3s" }}
             >
-              <div className="w-0 h-[60px]  flex justify-start items-center ">
+              <div
+                className="w-0 h-[60px]  flex justify-start items-center "
+                style={{ transition: ".3s" }}
+              >
                 <RxCross2
                   className="flex md:hidden lg:hidden text-[white] text-[22px] ml-[20px]"
                   onClick={() => {
@@ -107,7 +110,10 @@ function App() {
                   }}
                 />
               </div>
-              <div className="w-0 overflow-hidden h-[calc(100%-60px)] mt-[-60px] rounded-lg bg-[#1c1b23] flex flex-col justify-center text-[#888888] px-[0] py-[40px]">
+              <div
+                className="w-0 overflow-hidden h-[calc(100%-60px)] mt-[-60px] rounded-lg bg-[#1c1b23] flex flex-col justify-center text-[#888888] px-[0] py-[40px]"
+                style={{ transition: ".3s" }}
+              >
                 <span className="flex opacity-0 justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576]">
                   <a
                     className="flex"
@@ -148,12 +154,6 @@ function App() {
         )}
         <Banner data1={toggleSidebar} data2={setToggleSidebar} />
       </div>
-
-      {/* <Home />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer /> */}
     </>
   );
 }
