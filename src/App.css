@@ -54,9 +54,9 @@
 }
 @font-face {
   font-family: mukta;
-  src: url(./assets/font/Mukta-Regular.ttf);
+  src: url(./assets/font/Mukta-Light.ttf);
 }
 @font-face {
-  font-family: one;
-  src: url(./assets/font/MoiraiOne-Regular.ttf);
+  font-family: mukt;
+  src: url(./assets/font/Mukta-Regular.ttf);
 }

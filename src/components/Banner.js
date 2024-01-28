@@ -34,7 +34,7 @@ const Banner = (props) => {
           }}
         />
         <div
-          className="text-[white] mr-[20px] text-[14px] font-[lato] cursor-pointer flex justify-center items-center h-[35px] rounded-lg px-[10px] bg-[#207448] hover:bg-[#32995f] select-none"
+          className="text-[white] mr-[20px] text-[14px] font-[mukta] cursor-pointer flex justify-center items-center h-[35px] rounded-lg px-[10px] bg-[#207448] hover:bg-[#32995f] select-none"
           onClick={() => {
             scrollToSection(contact);
             console.log("clicked");
@@ -54,7 +54,7 @@ const Banner = (props) => {
           </div>
           <div className="w-[calc(100%-130px)] h-full flex justify-between items-center">
             <div className="flex flex-col text-[white] pl-[30px] font-[lato] ">
-              <span className="font-bold text-[24px] h-[30px] flex justify-start items-center">
+              <span className="font-bold font-[mukt] text-[24px] h-[30px] flex justify-start items-center">
                 <Typewriter
                   words={["Himadri Purkait", "Web Developer"]}
                   cursor="true"
@@ -64,22 +64,22 @@ const Banner = (props) => {
                   // cursorBlinking={false}
                 />
               </span>
-              <span className="text-[15px] text-[#bfbfbf]">
-                West Bengal, India
+              <span className="text-[15px] font-[mukta] text-[#bfbfbf]">
+                @himadri.1
               </span>
             </div>
-            <div className="w-auto px-[20px] h-[40px] hidden md:flex lg:flex justify-center items-center rounded-lg bg-[#1c1b23] text-[14px] text-[#bababa] font-[lato]">
+            <div className="w-auto px-[20px] h-[40px] hidden md:flex lg:flex justify-center items-center rounded-lg bg-[#1c1b23] text-[14px] text-[#bababa] font-[mukta]">
               <a
                 className="w-full h-full flex justify-center items-center"
                 href="https://www.instagram.com/himadri.1/"
               >
-                <FaInstagram className="mr-[10px] text-[22px] text-[#bababa]" />
+                <FaInstagram className="mr-[10px] text-[22px]  text-[#bababa]" />
                 Follow me on Instagram
               </a>
             </div>
           </div>
         </div>
-        <div className="text-[white] my-[20px]  font-[lato] text-[20px] font-semibold ml-[20px]">
+        <div className="text-[white] my-[23px]  font-[mukt] text-[20px] font-medium ml-[20px]">
           Individual Projects
         </div>
         <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center px-[20px]">
@@ -92,8 +92,10 @@ const Banner = (props) => {
                 ></img>
               </div>
               <div className="w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
-                <span className="text-[15px] font-bold ">ChatGpt CLone</span>
-                <span className="text-[13px] text-[#656565] leading-[15px] mt-[4px]">
+                <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
+                  ChatGpt Clone
+                </span>
+                <span className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
                   React JS, JavaScript, Tailwind CSS, Firebase
                 </span>
               </div>
@@ -111,10 +113,10 @@ const Banner = (props) => {
                 ></img>
               </div>
               <div className="w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
-                <span className="text-[15px] font-bold ">
+                <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
                   Infinity - Chatting App
                 </span>
-                <span className="text-[13px] text-[#656565] leading-[15px] mt-[4px]">
+                <span className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
                   React JS, JavaScript, Tailwind CSS, Firebase
                 </span>
               </div>
@@ -132,8 +134,10 @@ const Banner = (props) => {
                 ></img>
               </div>
               <div className="w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
-                <span className="text-[15px] font-bold ">YouTube Clone</span>
-                <span className="text-[13px] text-[#656565] leading-[15px] mt-[4px]">
+                <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
+                  YouTube Clone
+                </span>
+                <span className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
                   React JS, JavaScript, Tailwind CSS, YouTube API
                 </span>
               </div>
@@ -148,8 +152,10 @@ const Banner = (props) => {
                 ></img>
               </div>
               <div className="w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
-                <span className="text-[15px] font-bold ">Swiggy Clone</span>
-                <pre className="text-[13px] text-[#656565] leading-[15px] mt-[4px]  font-[lato]">
+                <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
+                  Swiggy Clone
+                </span>
+                <pre className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
                   React JS, JavaScript, CSS, Swiggy API {"\n"}*Enable CORS
                   Extension in browser
                 </pre>
@@ -157,13 +163,13 @@ const Banner = (props) => {
             </a>
           </div>
         </div>
-        <div className="text-[white] my-[20px]  font-[lato] text-[20px] font-semibold ml-[20px]">
+        <div className="text-[white] my-[23px]  font-[mukt] text-[20px] font-medium ml-[20px]">
           Group Projects
         </div>
         <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center px-[20px]">
           <div className="w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
             <div
-              className="w-full bg-[#1c1b23] rounded-lg h-full font-[lato] flex justify-center items-center text-[#8b8b8b] "
+              className="w-full bg-[#1c1b23] rounded-lg h-full  flex justify-center items-center text-[#8b8b8b] text-[17px] tracking-[.6px] font-bold font-[mukt] "
               // href="https://walleio.netlify.app/"
             >
               Coming Soon
@@ -182,7 +188,7 @@ const Banner = (props) => {
             </div>
           </div>
         </div>
-        <div className="text-[white] my-[20px] font-[lato] text-[20px] font-semibold ml-[20px]">
+        <div className="text-[white] my-[23px]  font-[mukt] text-[20px] font-medium ml-[20px]">
           What I know
         </div>
         <Qualification />

@@ -11,22 +11,22 @@ const Footer = () => {
         // ref={props.data}
         className="w-full h-[300px] bg-[#1c1b23] flex justify-center items-center mt-[20px] flex-col"
       >
-        <div className="text-[24px] font-[lato] text-[#2bd576] font-bold ">
+        <div className="text-[26px] font-[mukt] text-[#2bd576] font-bold ">
           Web Developer
         </div>
-        <div className="text-[13px] font-[lato] mt-[20px] text-[#999999] ">
+        <div className="text-[13px] font-[mukt] mt-[20px] text-[#999999] ">
           Hey this is my portfolio website,
         </div>
-        <div className="text-[13px] font-[lato] text-[#999999] ">
+        <div className="text-[14px] tracking-[.4px] font-[mukt] text-[#999999] ">
           here you will know about my{" "}
           <span className="text-[#2bd576]">works, </span>
           <span className="text-[#2bd576]">projects </span>
           and my <span className="text-[#2bd576]">skills</span>.
         </div>
-        <div className="text-[13px] font-[lato] mt-[15px] text-[#999999] ">
+        <div className="text-[15px] font-[mukt] mt-[15px] text-[#999999] ">
           Follow me on
         </div>
-        <div className="text-[13px] font-[lato] mt-[7px] text-[#999999] flex justify-center items-center ">
+        <div className="text-[14px] font-[mukt] mt-[7px] text-[#999999] flex justify-center items-center ">
           <a href="https://www.instagram.com/himadri.1/">
             <FaInstagram className="text-[20px] mx-[10px] cursor-pointer hover:text-[#2bd576]" />
           </a>
@@ -47,7 +47,7 @@ const Footer = () => {
             <FaXTwitter className="text-[20px] mx-[10px] cursor-pointer hover:text-[#2bd576]" />
           </a>
         </div>
-        <div className="text-[13px] font-[lato] mt-[40px] text-[#404044] ">
+        <div className="text-[14px] tracking-[.4px] font-[mukt] mt-[40px] text-[#606063] ">
           Copyright © 2023. All rights are reserved
         </div>
       </div>

@@ -42,51 +42,57 @@ function App() {
                 style={{ transition: ".3s" }}
               >
                 <span
-                  className="flex opacity-100 justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576]"
-                  style={{ transition: ".9s", transitionDelay: ".4s" }}
+                  className="flex justify-start items-center h-[40px] opacity-100  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]"
+                  style={{ transition: ".9s", transitionDelay: ".2s" }}
                 >
                   <a
-                    className="flex"
+                    className="flex justify-start items-center"
                     href="https://www.instagram.com/himadri.1/"
                   >
                     <FaInstagram className="mr-[10px] text-[22px] " /> Instagram
                   </a>
                 </span>
                 <span
-                  className="flex opacity-100 justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576]"
-                  style={{ transition: ".9s", transitionDelay: ".5s" }}
+                  className="flex justify-start items-center h-[40px] opacity-100  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]"
+                  style={{ transition: ".9s", transitionDelay: ".3s" }}
                 >
                   <a
-                    className="flex"
+                    className="flex justify-start items-center"
                     href="https://www.facebook.com/Himadri.Artist"
                   >
                     <FaFacebookF className="mr-[10px] text-[22px] " /> Facebook
                   </a>
                 </span>
                 <span
-                  className="flex opacity-100 justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]"
-                  style={{ transition: ".9s", transitionDelay: ".6s" }}
+                  className="flex justify-start items-center h-[40px] opacity-100  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]"
+                  style={{ transition: ".9s", transitionDelay: ".4s" }}
                 >
-                  <a className="flex" href="https://github.com/WRATH2002">
+                  <a
+                    className="flex justify-start items-center"
+                    href="https://github.com/WRATH2002"
+                  >
                     <FaGithub className="mr-[10px] text-[22px] " /> Github
                   </a>
                 </span>
                 <span
-                  className="flex opacity-100 justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]"
-                  style={{ transition: ".9s", transitionDelay: ".7s" }}
+                  className="flex justify-start items-center h-[40px] opacity-100  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]"
+                  style={{ transition: ".9s", transitionDelay: ".5s" }}
                 >
                   <a
-                    className="flex"
+                    className="flex justify-start items-center"
                     href="https://www.linkedin.com/in/himadri-purkait-315193272/"
                   >
                     <FaLinkedinIn className="mr-[10px] text-[22px] " /> Linkedin
                   </a>
                 </span>
                 <span
-                  className="flex opacity-100 justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]"
-                  style={{ transition: ".9s", transitionDelay: ".8s" }}
+                  className="flex justify-start items-center h-[40px] opacity-100  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]"
+                  style={{ transition: ".9s", transitionDelay: ".6s" }}
                 >
-                  <a className="flex" href="https://twitter.com/himadri_02">
+                  <a
+                    className="flex justify-start items-center"
+                    href="https://twitter.com/himadri_02"
+                  >
                     <FaXTwitter className="mr-[10px] text-[22px] " /> Twitter
                   </a>
                 </span>
@@ -114,37 +120,43 @@ function App() {
                 className="w-0 overflow-hidden h-[calc(100%-60px)] mt-[-60px] rounded-lg bg-[#1c1b23] flex flex-col justify-center text-[#888888] px-[0] py-[40px]"
                 style={{ transition: ".3s" }}
               >
-                <span className="flex opacity-0 justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576]">
+                <span className="flex justify-start items-center opacity-0 h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
                   <a
-                    className="flex"
+                    className="flex justify-start items-center"
                     href="https://www.instagram.com/himadri.1/"
                   >
                     <FaInstagram className="mr-[10px] text-[22px] " /> Instagram
                   </a>
                 </span>
-                <span className="flex opacity-0 justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576]">
+                <span className="flex justify-start items-center opacity-0 h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
                   <a
-                    className="flex"
+                    className="flex justify-start items-center"
                     href="https://www.facebook.com/Himadri.Artist"
                   >
                     <FaFacebookF className="mr-[10px] text-[22px] " /> Facebook
                   </a>
                 </span>
-                <span className="flex opacity-0 justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]">
-                  <a className="flex" href="https://github.com/WRATH2002">
+                <span className="flex justify-start items-center opacity-0 h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
+                  <a
+                    className="flex justify-start items-center"
+                    href="https://github.com/WRATH2002"
+                  >
                     <FaGithub className="mr-[10px] text-[22px] " /> Github
                   </a>
                 </span>
-                <span className="flex opacity-0 justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]">
+                <span className="flex justify-start items-center opacity-0 h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
                   <a
-                    className="flex"
+                    className="flex justify-start items-center"
                     href="https://www.linkedin.com/in/himadri-purkait-315193272/"
                   >
                     <FaLinkedinIn className="mr-[10px] text-[22px] " /> Linkedin
                   </a>
                 </span>
-                <span className="flex opacity-0 justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]">
-                  <a className="flex" href="https://twitter.com/himadri_02">
+                <span className="flex justify-start items-center opacity-0 h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
+                  <a
+                    className="flex justify-start items-center"
+                    href="https://twitter.com/himadri_02"
+                  >
                     <FaXTwitter className="mr-[10px] text-[22px] " /> Twitter
                   </a>
                 </span>

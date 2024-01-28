@@ -15,31 +15,43 @@ const Sidebar = () => {
         </div>
         <div className="w-full h-[calc(100%-60px)] rounded-lg bg-[#1c1b23] flex flex-col justify-center text-[#888888] px-[40px] py-[40px] font-[lato] text-[15px] font-thin">
           {/* <span className="text-[18px] font-medium text-white">Socials</span> */}
-          <span className="flex justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576]">
-            <a className="flex" href="https://www.instagram.com/himadri.1/">
+          <span className="flex justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
+            <a
+              className="flex justify-start items-center"
+              href="https://www.instagram.com/himadri.1/"
+            >
               <FaInstagram className="mr-[10px] text-[22px] " /> Instagram
             </a>
           </span>
-          <span className="flex justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576]">
-            <a className="flex" href="https://www.facebook.com/Himadri.Artist">
+          <span className="flex justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
+            <a
+              className="flex  justify-start items-center"
+              href="https://www.facebook.com/Himadri.Artist"
+            >
               <FaFacebookF className="mr-[10px] text-[22px] " /> Facebook
             </a>
           </span>
-          <span className="flex justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]">
-            <a className="flex" href="https://github.com/WRATH2002">
+          <span className="flex justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
+            <a
+              className="flex  justify-start items-center"
+              href="https://github.com/WRATH2002"
+            >
               <FaGithub className="mr-[10px] text-[22px] " /> Github
             </a>
           </span>
-          <span className="flex justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]">
+          <span className="flex justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
             <a
-              className="flex"
+              className="flex  justify-start items-center"
               href="https://www.linkedin.com/in/himadri-purkait-315193272/"
             >
               <FaLinkedinIn className="mr-[10px] text-[22px] " /> Linkedin
             </a>
           </span>
-          <span className="flex justify-start items-center h-[40px] my-[6px] hover:text-[#2bd576]">
-            <a className="flex" href="https://twitter.com/himadri_02">
+          <span className="flex justify-start items-center h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
+            <a
+              className="flex  justify-start items-center"
+              href="https://twitter.com/himadri_02"
+            >
               <FaXTwitter className="mr-[10px] text-[22px] " /> Twitter
             </a>
           </span>
