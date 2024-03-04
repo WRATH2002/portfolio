@@ -44,7 +44,7 @@ const Qualification = () => {
         </div>
       </div>
       <div className="w-full md:w-[calc(100%-520px)] lg:w-[calc(100%-520px)] font-[mukt] bg-[#1c1b23] h-auto p-[20px] rounded-lg">
-        <span className="text-[17px] text-white   font-semibold">
+        <span className="text-[17px] text-[#2ad073]   font-semibold">
           More Projects
         </span>
         <div className="w-full  h-auto my-[10px] flex justify-center items-center cursor-pointer">
@@ -53,10 +53,10 @@ const Qualification = () => {
             href="https://squidtictactoe.netlify.app/"
           >
             <div className="w-[60px] h-[60px] mr-[10px] flex justify-start items-center">
-              <GiTicTacToe className="text-[35px] text-[#8b8a91]" />
+              <GiTicTacToe className="text-[35px] text-[white]" />
             </div>
             <div className="flex w-[calc(100%-70px)] flex-col h-[60px] justify-center items-start">
-              <span className="text-[15px] text-[#8b8a91] font-bold ">
+              <span className="text-[15px] text-[white] font-bold ">
                 Tic Tac Toe Game
               </span>
               <span className="text-[13px] text-[#606063] leading-[15px] tracking-[.4px] mt-[4px]">
@@ -74,10 +74,10 @@ const Qualification = () => {
             href="https://getweatherio.netlify.app/"
           >
             <div className="w-[60px] h-[60px] mr-[10px] flex justify-start items-center">
-              <TiWeatherStormy className="text-[35px] text-[#8b8a91]" />
+              <TiWeatherStormy className="text-[35px] text-[white]" />
             </div>
             <div className="flex w-[calc(100%-70px)] flex-col h-[60px] justify-center items-start">
-              <span className="text-[15px] text-[#8b8a91] font-bold ">
+              <span className="text-[15px] text-[white] font-bold ">
                 Weather.io
               </span>
               <span className="text-[13px] text-[#606063] leading-[15px] tracking-[.4px] mt-[4px]">
@@ -95,10 +95,10 @@ const Qualification = () => {
             href="https://mycalculatorio.netlify.app/"
           >
             <div className="w-[60px] h-[60px] mr-[10px] flex justify-start items-center">
-              <MdCalculate className="text-[35px] text-[#8b8a91]" />
+              <MdCalculate className="text-[35px] text-[white]" />
             </div>
             <div className="flex w-[calc(100%-70px)] flex-col h-[60px] justify-center items-start">
-              <span className="text-[15px] text-[#8b8a91] font-bold ">
+              <span className="text-[15px] text-[white] font-bold ">
                 Calculator.io
               </span>
               <span className="text-[13px] text-[#606063] leading-[15px] tracking-[.4px] mt-[4px]">

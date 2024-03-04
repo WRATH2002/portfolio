@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "../assets/img/dp.jpeg";
+import photo from "../assets/img/phh.jpg";
 import Project from "./Project";
 import { IoReorderThree } from "react-icons/io5";
 import { IoReorderThreeOutline } from "react-icons/io5";
@@ -12,6 +12,7 @@ import g1 from "../assets/img/g1.jpg";
 import g2 from "../assets/img/g2.jpg";
 import g3 from "../assets/img/g3.jpg";
 import youtube from "../assets/img/pn3.png";
+import ph from "../assets/img/pl.png";
 import Qualification from "./Qualification";
 import { FiUser } from "react-icons/fi";
 import Footer from "./Footer";
@@ -49,7 +50,7 @@ const Banner = (props) => {
       <div className="w-full h-[60px]  flex justify-start items-center "></div>
       <div className="w-full h-[160px]  bannerBg rounded-lg">
         <div className="w-[100%] h-full backdrop-blur-[8px] flex justify-center items-center px-[35px] rounded-lg">
-          <div className="w-[100px] h-[100px] rounded-full bg-gradient-to-b from-[#4f5dd7] to-[#00c1cb] flex justify-center items-center p-[3px]">
+          <div className="group w-[100px] h-[100px] rounded-full bg-gradient-to-b from-[#ffb657] to-[#ff7700] flex justify-center items-center p-[3px]">
             <img
               className="w-full h-full object-cover rounded-full"
               src={photo}
@@ -86,15 +87,15 @@ const Banner = (props) => {
           Individual Projects
         </div>
         <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center px-[20px]">
-          <div className="w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
+          <div className="group w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
             <a className="w-full h-full  " href="https://walleio.netlify.app/">
               <div className="w-full bg-[#1c1b23] rounded-t-lg h-[60%]">
                 <img
-                  className="w-full h-full object-cover rounded-t-lg"
+                  className="group w-full h-full object-cover rounded-t-lg"
                   src={chatgpt}
                 ></img>
               </div>
-              <div className="w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
+              <div className="group-hover:hidden w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
                 <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
                   ChatGpt Clone
                 </span>
@@ -102,16 +103,25 @@ const Banner = (props) => {
                   React JS, JavaScript, Tailwind CSS, Firebase
                 </span>
               </div>
+              <div className="group-hover:flex w-full h-[40%] rounded-b-lg bg-white px-[20px]  font-[lato] hidden flex-col justify-center items-center ">
+                <span className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                  This is a Clone of ChatGpt called{" "}
+                  <span className="text-black font-bold">WALLE</span>, that
+                  answers all of your questions with ease. It is implemented
+                  using <span className="text-black font-bold">OpenAi API</span>
+                  .
+                </span>
+              </div>
             </a>
           </div>
-          <div className="w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
+          <div className="group w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
             <a
               className="w-full h-full  "
               href="https://infinityio.netlify.app/"
             >
               <div className="w-full bg-[#1c1b23] rounded-t-lg h-[150px] flex flex-col justify-end items-center">
                 <img
-                  className="w-full h-full object-cover rounded-t-lg"
+                  className="group w-full h-full object-cover rounded-t-lg"
                   src={chat}
                 ></img>
                 {/* <div className="flex justify-center items-end pb-[8px] mt-[-150px] rounded-t-lg  h-full w-full bg-gradient-to-b from-transparent from-[70%] to-[#000000a3] to-[30%">
@@ -120,7 +130,7 @@ const Banner = (props) => {
                   <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
                 </div> */}
               </div>
-              <div className="w-full h-[100px] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
+              <div className="group-hover:hidden w-full h-[100px] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
                 <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
                   Infinity - Chatting App
                 </span>
@@ -128,16 +138,27 @@ const Banner = (props) => {
                   React JS, JavaScript, Tailwind CSS, Firebase
                 </span>
               </div>
+              <div className="group-hover:flex w-full h-[40%] rounded-b-lg bg-white px-[20px]  font-[lato] hidden flex-col justify-center items-center ">
+                <span className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                  This is an n to n chatting website called{" "}
+                  <span className="text-black font-bold">INFINITY</span>. Here
+                  one can talk to anyone who have account in itwith status
+                  visible. It also has{" "}
+                  <span className="text-black font-bold">Status</span> and{" "}
+                  <span className="text-black font-bold">Group</span> creation
+                  features.
+                </span>
+              </div>
             </a>
           </div>
-          <div className="w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
+          <div className="group w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
             <a
               className="w-full h-full  "
               href="https://playynext.netlify.app/"
             >
               <div className="w-full bg-[#1c1b23] rounded-t-lg h-[150px] flex flex-col justify-end items-center">
                 <img
-                  className="w-full h-full object-cover rounded-t-lg"
+                  className="group w-full h-full object-cover rounded-t-lg"
                   src={youtube}
                 ></img>
                 {/* <div className="flex justify-center items-end pb-[8px] mt-[-150px] rounded-t-lg  h-full w-full bg-gradient-to-b from-transparent from-[70%] to-[#000000a3] to-[30%">
@@ -146,7 +167,7 @@ const Banner = (props) => {
                   <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
                 </div> */}
               </div>
-              <div className="w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
+              <div className="group-hover:hidden w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
                 <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
                   YouTube Clone
                 </span>
@@ -154,17 +175,27 @@ const Banner = (props) => {
                   React JS, JavaScript, Tailwind CSS, YouTube API
                 </span>
               </div>
+              <div className="group-hover:flex w-full h-[40%] rounded-b-lg bg-white px-[20px]  font-[lato] hidden flex-col justify-center items-center ">
+                <span className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                  This is a Clone of Yotube called{" "}
+                  <span className="text-black font-bold">PLAYNEXT</span>. Here
+                  one can watch videos of their favourite creators. It has
+                  features like{" "}
+                  <span className="text-black font-bold">Searching Videos</span>
+                  , <span className="text-black font-bold">Comments</span> etc.
+                </span>
+              </div>
             </a>
           </div>
-          <div className="w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
+          <div className="group w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
             <a className="w-full h-full  " href="https://foodfave.netlify.app/">
               <div className="w-full bg-[#1c1b23] rounded-t-lg h-[60%]">
                 <img
-                  className="w-full h-full object-cover rounded-t-lg"
+                  className="group w-full h-full object-cover rounded-t-lg"
                   src={swiggy}
                 ></img>
               </div>
-              <div className="w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
+              <div className="group-hover:hidden w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
                 <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
                   Swiggy Clone
                 </span>
@@ -173,21 +204,33 @@ const Banner = (props) => {
                   Extension in browser
                 </pre>
               </div>
+              <div className="group-hover:flex w-full h-[40%] rounded-b-lg bg-white px-[20px]  font-[lato] hidden flex-col justify-center items-center ">
+                <span className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                  This is a Clone of Swiggy called{" "}
+                  <span className="text-black font-bold">FOODFAVE</span>, where
+                  one can search for{" "}
+                  <span className="text-black font-bold">Restuarants</span> and
+                  can see all the{" "}
+                  <span className="text-black font-bold">Menu's</span>. It also
+                  have working{" "}
+                  <span className="text-black font-bold">Cart System</span>.
+                </span>
+              </div>
             </a>
           </div>
         </div>
         <div className="text-[white] my-[23px]  font-[mukt] text-[20px] font-medium ml-[20px]">
           Group Projects
         </div>
-        <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center px-[20px]">
+        <div className="group flex flex-col md:flex-row lg:flex-row justify-between items-center px-[20px]">
           <div className="w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
             <a
               className="w-full h-full  "
-              href="https://playynext.netlify.app/"
+              href="https://checkyourhealth.netlify.app/"
             >
               <div className="w-full bg-[#1c1b23] rounded-t-lg h-[150px] flex flex-col justify-end items-center">
                 <img
-                  className="w-full h-full object-cover rounded-t-lg"
+                  className="group w-full h-full object-cover rounded-t-lg"
                   src={g1}
                 ></img>
                 <div className="flex justify-center items-end pb-[8px] mt-[-150px] rounded-t-lg  h-full w-full bg-gradient-to-b from-transparent from-[70%] to-[#000000a3] to-[30%">
@@ -196,13 +239,24 @@ const Banner = (props) => {
                   <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
                 </div>
               </div>
-              <div className="w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
+              <div className="group-hover:hidden w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
                 <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
                   CheckYourHealth
                 </span>
                 <span className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
                   React JS, JavaScript, Tailwind CSS, Rduino Uno, Python,
                   Firebase
+                </span>
+              </div>
+              <div className="group-hover:flex w-full h-[40%] rounded-b-lg bg-white px-[20px]  font-[lato] hidden flex-col justify-center items-center ">
+                <span className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                  There is a device which tells{" "}
+                  <span className="text-black font-bold">Current BPM</span>,{" "}
+                  <span className="text-black font-bold">
+                    Detects Sudden Fall
+                  </span>{" "}
+                  and notifies the user through website with all details. Best
+                  view in Android.
                 </span>
               </div>
             </a>
