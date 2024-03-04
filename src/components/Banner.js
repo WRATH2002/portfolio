@@ -8,7 +8,10 @@ import { FaInstagram } from "react-icons/fa6";
 import chatgpt from "../assets/img/chtagpt.jpg";
 import swiggy from "../assets/img/swiggy1.webp";
 import chat from "../assets/img/chat3.jpg";
-import youtube from "../assets/img/youtube.webp";
+import g1 from "../assets/img/g1.jpg";
+import g2 from "../assets/img/g2.jpg";
+import g3 from "../assets/img/g3.jpg";
+import youtube from "../assets/img/pn1.png";
 import Qualification from "./Qualification";
 import { FiUser } from "react-icons/fi";
 import Footer from "./Footer";
@@ -106,13 +109,18 @@ const Banner = (props) => {
               className="w-full h-full  "
               href="https://infinityio.netlify.app/"
             >
-              <div className="w-full bg-[#1c1b23] rounded-t-lg h-[60%]">
+              <div className="w-full bg-[#1c1b23] rounded-t-lg h-[150px] flex flex-col justify-end items-center">
                 <img
                   className="w-full h-full object-cover rounded-t-lg"
                   src={chat}
                 ></img>
+                {/* <div className="flex justify-center items-end pb-[8px] mt-[-150px] rounded-t-lg  h-full w-full bg-gradient-to-b from-transparent from-[70%] to-[#000000a3] to-[30%">
+                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[white]"></div>
+                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
+                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
+                </div> */}
               </div>
-              <div className="w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
+              <div className="w-full h-[100px] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
                 <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
                   Infinity - Chatting App
                 </span>
@@ -127,11 +135,16 @@ const Banner = (props) => {
               className="w-full h-full  "
               href="https://playynext.netlify.app/"
             >
-              <div className="w-full bg-[#1c1b23] rounded-t-lg h-[60%]">
+              <div className="w-full bg-[#1c1b23] rounded-t-lg h-[150px] flex flex-col justify-end items-center">
                 <img
                   className="w-full h-full object-cover rounded-t-lg"
                   src={youtube}
                 ></img>
+                {/* <div className="flex justify-center items-end pb-[8px] mt-[-150px] rounded-t-lg  h-full w-full bg-gradient-to-b from-transparent from-[70%] to-[#000000a3] to-[30%">
+                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[white]"></div>
+                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
+                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
+                </div> */}
               </div>
               <div className="w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
                 <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
@@ -168,24 +181,31 @@ const Banner = (props) => {
         </div>
         <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center px-[20px]">
           <div className="w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
-            <div
-              className="w-full bg-[#1c1b23] rounded-lg h-full  flex justify-center items-center text-[#8b8b8b] text-[17px] tracking-[.6px] font-bold font-[mukt] "
-              // href="https://walleio.netlify.app/"
+            <a
+              className="w-full h-full  "
+              href="https://playynext.netlify.app/"
             >
-              Coming Soon
-              {/* <div className="w-full bg-[#1c1b23] rounded-t-lg h-[60%]">
+              <div className="w-full bg-[#1c1b23] rounded-t-lg h-[150px] flex flex-col justify-end items-center">
                 <img
                   className="w-full h-full object-cover rounded-t-lg"
-                  src={chatgpt}
+                  src={g1}
                 ></img>
+                <div className="flex justify-center items-end pb-[8px] mt-[-150px] rounded-t-lg  h-full w-full bg-gradient-to-b from-transparent from-[70%] to-[#000000a3] to-[30%">
+                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[white]"></div>
+                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
+                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
+                </div>
               </div>
-              <div className="w-full h-[40%] rounded-b-lg bg-[white] p-[20px]  font-[lato] flex flex-col justify-start items-start ">
-                <span className="text-[15px] font-bold ">ChatGpt CLone</span>
-                <span className="text-[13px] text-[#656565] leading-[15px] mt-[4px]">
-                  React JS, JavaScript, Tailwind CSS, Firebase
+              <div className="w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
+                <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
+                  CheckYourHealth
                 </span>
-              </div> */}
-            </div>
+                <span className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                  React JS, JavaScript, Tailwind CSS, Rduino Uno, Python,
+                  Firebase
+                </span>
+              </div>
+            </a>
           </div>
         </div>
         <div className="text-[white] my-[23px]  font-[mukt] text-[20px] font-medium ml-[20px]">
