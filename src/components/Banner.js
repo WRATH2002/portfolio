@@ -18,8 +18,13 @@ import { FiUser } from "react-icons/fi";
 import Footer from "./Footer";
 import { useRef, useState, ref } from "react";
 import { Typewriter } from "react-simple-typewriter";
+import { FaCaretLeft } from "react-icons/fa";
+import { FaAngleLeft } from "react-icons/fa6";
+import { FaCaretRight } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa6";
 const Banner = (props) => {
   const contact = useRef(null);
+  const [pos, setPos] = useState(1);
 
   const scrollToSection = (elementRef) => {
     // window.scrollTo({
@@ -86,25 +91,29 @@ const Banner = (props) => {
         <div className="text-[white] my-[23px]  font-[mukt] text-[20px] font-medium ml-[20px]">
           Individual Projects
         </div>
-        <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center px-[20px]">
+        <div className=" flex flex-col md:flex-row lg:flex-row justify-between items-center px-[20px]">
           <div className="group w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
-            <a className="w-full h-full  " href="https://walleio.netlify.app/">
-              <div className="w-full bg-[#1c1b23] rounded-t-lg h-[60%]">
+            <a
+              className="group w-full h-full  "
+              href="https://walleio.netlify.app/"
+            >
+              <div className="w-full bg-[#1c1b23] rounded-t-lg h-[60%] group-hover:h-[0%] transition-height duration-300 ease-in-out">
                 <img
-                  className="group w-full h-full object-cover rounded-t-lg"
+                  className=" w-full h-full object-cover rounded-t-lg group-hover:opacity-0 transition-opacity duration-300 ease-in-out"
                   src={chatgpt}
                 ></img>
               </div>
-              <div className="group-hover:hidden w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
+              <div
+                className="w-full group-hover:h-[100%] transition-height duration-300 ease-in-out h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start group-hover:rounded-lg"
+                // style={{ transition: ".3s" }}
+              >
                 <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
                   ChatGpt Clone
                 </span>
-                <span className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                <span className="group-hover:hidden  text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
                   React JS, JavaScript, Tailwind CSS, Firebase
                 </span>
-              </div>
-              <div className="group-hover:flex w-full h-[40%] rounded-b-lg bg-white px-[20px]  font-[lato] hidden flex-col justify-center items-center ">
-                <span className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                <span className="group-hover:block  hidden text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
                   This is a Clone of ChatGpt called{" "}
                   <span className="text-black font-bold">WALLE</span>, that
                   answers all of your questions with ease. It is implemented
@@ -116,6 +125,105 @@ const Banner = (props) => {
           </div>
           <div className="group w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
             <a
+              className="group w-full h-full  "
+              href="https://infinityio.netlify.app/"
+            >
+              <div className="w-full bg-[#1c1b23] rounded-t-lg h-[60%] group-hover:h-[0%] transition-height duration-300 ease-in-out ">
+                <img
+                  className=" w-full h-full object-cover rounded-t-lg group-hover:opacity-0 transition-opacity duration-300 ease-in-out"
+                  src={chat}
+                ></img>
+              </div>
+              <div
+                className="w-full group-hover:h-[100%] transition-height duration-300 ease-in-out h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start group-hover:rounded-lg "
+                // style={{ transition: ".3s" }}
+              >
+                <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
+                  Infinity - Chatting App
+                </span>
+                <span className="group-hover:hidden  text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                  React JS, JavaScript, Tailwind CSS, Firebase
+                </span>
+                <span className="group-hover:block  hidden text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                  This is a Clone of ChatGpt called{" "}
+                  <span className="text-black font-bold">WALLE</span>, that
+                  answers all of your questions with ease. It is implemented
+                  using <span className="text-black font-bold">OpenAi API</span>
+                  .
+                </span>
+              </div>
+            </a>
+          </div>
+          <div className="group w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
+            <a
+              className="group w-full h-full  "
+              href="https://playynext.netlify.app/"
+            >
+              <div className="w-full bg-[#1c1b23] rounded-t-lg h-[60%] group-hover:h-[0%] transition-height duration-300 ease-in-out">
+                <img
+                  className=" w-full h-full object-cover rounded-t-lg group-hover:opacity-0 transition-opacity duration-300 ease-in-out"
+                  src={youtube}
+                ></img>
+              </div>
+              <div
+                className="w-full group-hover:h-[100%] transition-height duration-300 ease-in-out h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start group-hover:rounded-lg "
+                // style={{ transition: ".3s" }}
+              >
+                <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
+                  YouTube Clone
+                </span>
+                <span className="group-hover:hidden  text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                  React JS, JavaScript, Tailwind CSS, YouTube API
+                </span>
+                <span className="group-hover:block  hidden text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                  This is a Clone of Yotube called{" "}
+                  <span className="text-black font-bold">PLAYNEXT</span>. Here
+                  one can watch videos of their favourite creators. It has
+                  features like{" "}
+                  <span className="text-black font-bold">Searching Videos</span>
+                  , <span className="text-black font-bold">Comments</span> etc.
+                </span>
+              </div>
+            </a>
+          </div>
+          <div className="group w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
+            <a
+              className="group w-full h-full  "
+              href="https://foodfave.netlify.app/"
+            >
+              <div className="w-full bg-[#1c1b23] rounded-t-lg h-[60%] group-hover:h-[0%] transition-height duration-300 ease-in-out">
+                <img
+                  className=" w-full h-full object-cover rounded-t-lg group-hover:opacity-0 transition-opacity duration-300 ease-in-out"
+                  src={swiggy}
+                ></img>
+              </div>
+              <div
+                className="w-full group-hover:h-[100%] transition-height duration-300 ease-in-out h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start  group-hover:rounded-lg"
+                // style={{ transition: ".3s" }}
+              >
+                <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
+                  Swiggy Clone
+                </span>
+                <span className="group-hover:hidden  text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                  React JS, JavaScript, CSS, Swiggy API {"\n"}*Enable CORS
+                  Extension in browser
+                </span>
+                <span className="group-hover:block  hidden text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                  This is a Clone of Swiggy called{" "}
+                  <span className="text-black font-bold">FOODFAVE</span>, where
+                  one can search for{" "}
+                  <span className="text-black font-bold">Restuarants</span> and
+                  can see all the{" "}
+                  <span className="text-black font-bold">Menu's</span>. It also
+                  have working{" "}
+                  <span className="text-black font-bold">Cart System</span>.
+                </span>
+              </div>
+            </a>
+          </div>
+
+          {/* <div className="group w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
+            <a
               className="w-full h-full  "
               href="https://infinityio.netlify.app/"
             >
@@ -124,11 +232,7 @@ const Banner = (props) => {
                   className="group w-full h-full object-cover rounded-t-lg"
                   src={chat}
                 ></img>
-                {/* <div className="flex justify-center items-end pb-[8px] mt-[-150px] rounded-t-lg  h-full w-full bg-gradient-to-b from-transparent from-[70%] to-[#000000a3] to-[30%">
-                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[white]"></div>
-                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
-                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
-                </div> */}
+               
               </div>
               <div className="group-hover:hidden w-full h-[100px] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
                 <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
@@ -150,8 +254,8 @@ const Banner = (props) => {
                 </span>
               </div>
             </a>
-          </div>
-          <div className="group w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
+          </div> */}
+          {/* <div className="group w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
             <a
               className="w-full h-full  "
               href="https://playynext.netlify.app/"
@@ -161,11 +265,7 @@ const Banner = (props) => {
                   className="group w-full h-full object-cover rounded-t-lg"
                   src={youtube}
                 ></img>
-                {/* <div className="flex justify-center items-end pb-[8px] mt-[-150px] rounded-t-lg  h-full w-full bg-gradient-to-b from-transparent from-[70%] to-[#000000a3] to-[30%">
-                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[white]"></div>
-                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
-                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
-                </div> */}
+            
               </div>
               <div className="group-hover:hidden w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
                 <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
@@ -186,8 +286,8 @@ const Banner = (props) => {
                 </span>
               </div>
             </a>
-          </div>
-          <div className="group w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
+          </div> */}
+          {/* <div className="group w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
             <a className="w-full h-full  " href="https://foodfave.netlify.app/">
               <div className="w-full bg-[#1c1b23] rounded-t-lg h-[60%]">
                 <img
@@ -217,39 +317,83 @@ const Banner = (props) => {
                 </span>
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="text-[white] my-[23px]  font-[mukt] text-[20px] font-medium ml-[20px]">
           Group Projects
         </div>
-        <div className="group flex flex-col md:flex-row lg:flex-row justify-between items-center px-[20px]">
-          <div className="w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
+        <div className=" flex flex-col md:flex-row lg:flex-row justify-between items-center px-[20px]">
+          <div className=" w-full md:w-[23.5%] lg:w-[23.5%] h-[250px]  rounded-lg my-[10px] md:my-0 lg:my-0">
+            <div className="group-hover:hidden mb-[-150px] bg-slate-300 w-full h-[150px] object-cover rounded-t-lg z-30  flex justify-between items-center">
+              {pos == 1 ? (
+                <>
+                  <div className="w-[30px] h-[40px] bg-transparent flex justify-center items-center rounded-r-md z-30"></div>
+                </>
+              ) : (
+                <div
+                  className="w-[30px] h-[40px] bg-[#000000a8] flex justify-center items-center rounded-r-md z-30"
+                  onClick={() => {
+                    if (pos > 1) {
+                      setPos(pos - 1);
+                    }
+                  }}
+                >
+                  <FaCaretLeft className="text-white text-[25px]" />
+                </div>
+              )}
+              {pos == 3 ? (
+                <>
+                  {" "}
+                  <div className="w-[30px] h-[40px] bg-transparent flex justify-center items-center rounded-r-md z-30"></div>
+                </>
+              ) : (
+                <div className="w-[30px] h-[40px] bg-[#000000a8] flex justify-center items-center rounded-l-md z-30">
+                  <FaCaretRight
+                    className="text-white text-[25px]"
+                    onClick={() => {
+                      if (pos < 3) {
+                        setPos(pos + 1);
+                      }
+                    }}
+                  />
+                </div>
+              )}
+            </div>
             <a
-              className="w-full h-full  "
+              className="group w-full h-full  "
               href="https://checkyourhealth.netlify.app/"
             >
-              <div className="w-full bg-[#1c1b23] rounded-t-lg h-[150px] flex flex-col justify-end items-center">
-                <img
-                  className="group w-full h-full object-cover rounded-t-lg"
-                  src={g1}
-                ></img>
-                <div className="flex justify-center items-end pb-[8px] mt-[-150px] rounded-t-lg  h-full w-full bg-gradient-to-b from-transparent from-[70%] to-[#000000a3] to-[30%">
-                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[white]"></div>
-                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
-                  <div className="w-[8px] h-[8px] mx-[3px] rounded-full bg-[#757575]"></div>
-                </div>
+              <div className=" w-full bg-[#1c1b23] rounded-t-lg h-[150px] group-hover:h-[0px] transition-height duration-300 ease-in-out">
+                {pos == 1 ? (
+                  <img
+                    className=" w-full h-full object-cover rounded-t-lg group-hover:opacity-0 transition-opacity duration-300 ease-in-out"
+                    src={g1}
+                  ></img>
+                ) : pos == 2 ? (
+                  <img
+                    className=" w-full h-full object-cover rounded-t-lg group-hover:opacity-0 transition-opacity duration-300 ease-in-out"
+                    src={g2}
+                  ></img>
+                ) : (
+                  <img
+                    className=" w-full h-full object-cover rounded-t-lg group-hover:opacity-0 transition-opacity duration-300 ease-in-out"
+                    src={g3}
+                  ></img>
+                )}
               </div>
-              <div className="group-hover:hidden w-full h-[40%] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start ">
+
+              <div
+                className="z-50 w-full group-hover:h-[250px] transition-height duration-300 ease-in-out h-[100px] rounded-b-lg bg-white p-[20px]  font-[lato] flex flex-col justify-start items-start  group-hover:rounded-lg"
+                // style={{ transition: ".3s" }}
+              >
                 <span className="text-[17px] tracking-[.6px] font-bold font-[mukt] ">
                   CheckYourHealth
                 </span>
-                <span className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                <span className="group-hover:hidden  text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
                   React JS, JavaScript, Tailwind CSS, Rduino Uno, Python,
                   Firebase
                 </span>
-              </div>
-              <div className="group-hover:flex w-full h-[40%] rounded-b-lg bg-white px-[20px]  font-[lato] hidden flex-col justify-center items-center ">
-                <span className="text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
+                <span className="group-hover:block  hidden text-[14.5px] tracking-[.4px] md:text[13.5px] lg:text-[13.5px] font-[mukta] font-medium text-[#6a6a6a] leading-[16px] mt-[4px]">
                   There is a device which tells{" "}
                   <span className="text-black font-bold">Current BPM</span>,{" "}
                   <span className="text-black font-bold">
