@@ -6,12 +6,19 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.11",
+    "ldrs": "^1.0.2",
+    "lucide": "^0.400.0",
+    "lucide-react": "^0.400.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
+    "react-qr-rounded": "^1.0.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
     "react-simple-typewriter": "^5.0.1",
+    "tailwind-merge": "^2.3.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -39,6 +46,6 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.4.4"
   }
 }

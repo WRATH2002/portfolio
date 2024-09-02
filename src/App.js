@@ -3,169 +3,118 @@ import "./App.css";
 // import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Banner from "./components/Banner";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
+import AboutMe from "./components/AboutMe";
+import Navbar from "./components/Navbar";
+import { Projects } from "./components/Projects";
+import Smartphone from "./components/Smartphone";
+import { ring } from "ldrs";
+
+ring.register();
 
 function App() {
   const [toggleSidebar, setToggleSidebar] = useState(false);
+  const [timer, setTimer] = useState(false);
+  const [anime, setAnime] = useState(false);
+  const [anime1, setAnime1] = useState(false);
+
+  useEffect(() => {
+    setAnime(false);
+    setTimeout(() => {
+      setAnime(true);
+    }, 1800);
+  }, []);
+  useEffect(() => {
+    setAnime1(false);
+    setTimeout(() => {
+      setAnime1(true);
+    }, 300);
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setTimer(true);
+    }, 4000);
+  }, []);
+
+  // function sortcolor() {
+  //   let arr = [2, 0, 1, 0, 0, 1, 2, 0, 2, 1, 0, 2];
+  //   for (let i = 0; i < 3; i++) {
+  //     let pos = 0
+  //     for (let j = 0; j < arr.length; j++) {
+  //       if (arr[j] < arr[j - 1]) {
+  //         let t = arr[j];
+  //         arr[j] = arr[j - 1];
+  //         arr[j - 1] = t;
+  //       }
+  //     }
+  //   }
+  //   console.log(arr);
+  // }
+  // useEffect(() => {
+  //   sortcolor();
+  // }, []);
   return (
     <>
-      <div
-        className="w-[100%] h-[100vh] bg-[#14131a] flex overflow-y-scroll"
-        style={{ transition: ".3s" }}
-      >
-        <Sidebar />
-        {toggleSidebar == true ? (
-          <>
-            <div
-              className="w-[300px] h-[100vh] bg-[#1c1b23] fixed z-40"
-              style={{ transition: ".3s" }}
-            >
+      {/* <AboutMe /> */}
+      {timer ? (
+        <Smartphone />
+      ) : (
+        <div className="w-full h-[100svh] flex flex-col justify-center items-center">
+          {/* <l-ring
+            size="40"
+            stroke="5"
+            bg-opacity="0"
+            speed="2"
+            color="black"
+          ></l-ring> */}
+          {anime1 ? (
+            <>
               <div
-                className="w-full h-[60px]  flex justify-start items-center "
-                style={{ transition: ".3s" }}
+                className={
+                  " font-[geist] text-[15px] ml-[-90px]" +
+                  (anime
+                    ? " mb-[-30px] h-[20px] opacity-100"
+                    : " mb-[-20px] h-0 opacity-0")
+                }
+                style={{
+                  transition: anime ? ".4s" : "none",
+                  transitionDelay: anime ? ".2s" : "0s",
+                }}
               >
-                <RxCross2
-                  className="flex md:hidden lg:hidden text-[white] text-[22px] ml-[20px]"
-                  onClick={() => {
-                    setToggleSidebar(false);
-                  }}
-                />
+                welcome to my
               </div>
-              <div
-                className="w-full h-[calc(100%-60px)] mt-[-60px] rounded-lg bg-[#1c1b23] flex flex-col justify-center text-[#888888] px-[60px] py-[40px]"
-                style={{ transition: ".3s" }}
-              >
-                <span
-                  className="flex justify-start items-center h-[40px] opacity-100  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]"
-                  style={{ transition: ".9s", transitionDelay: ".2s" }}
+              <div className="font-[sky2] text-[25px] font-semibold ">
+                <svg
+                  height="100"
+                  stroke="#000000"
+                  stroke-width="2.6"
+                  class="text-line"
+                  width="100%"
                 >
-                  <a
-                    className="flex justify-start items-center"
-                    href="https://www.instagram.com/himadri.1/"
+                  <text
+                    x="50%"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                    y="50%"
                   >
-                    <FaInstagram className="mr-[10px] text-[22px] " /> Instagram
-                  </a>
-                </span>
-                <span
-                  className="flex justify-start items-center h-[40px] opacity-100  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]"
-                  style={{ transition: ".9s", transitionDelay: ".3s" }}
-                >
-                  <a
-                    className="flex justify-start items-center"
-                    href="https://www.facebook.com/Himadri.Artist"
-                  >
-                    <FaFacebookF className="mr-[10px] text-[22px] " /> Facebook
-                  </a>
-                </span>
-                <span
-                  className="flex justify-start items-center h-[40px] opacity-100  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]"
-                  style={{ transition: ".9s", transitionDelay: ".4s" }}
-                >
-                  <a
-                    className="flex justify-start items-center"
-                    href="https://github.com/WRATH2002"
-                  >
-                    <FaGithub className="mr-[10px] text-[22px] " /> Github
-                  </a>
-                </span>
-                <span
-                  className="flex justify-start items-center h-[40px] opacity-100  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]"
-                  style={{ transition: ".9s", transitionDelay: ".5s" }}
-                >
-                  <a
-                    className="flex justify-start items-center"
-                    href="https://www.linkedin.com/in/himadri-purkait-315193272/"
-                  >
-                    <FaLinkedinIn className="mr-[10px] text-[22px] " /> Linkedin
-                  </a>
-                </span>
-                <span
-                  className="flex justify-start items-center h-[40px] opacity-100  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]"
-                  style={{ transition: ".9s", transitionDelay: ".6s" }}
-                >
-                  <a
-                    className="flex justify-start items-center"
-                    href="https://twitter.com/himadri_02"
-                  >
-                    <FaXTwitter className="mr-[10px] text-[22px] " /> Twitter
-                  </a>
-                </span>
+                    portfolio
+                  </text>
+                </svg>
               </div>
-            </div>
-          </>
-        ) : (
-          <>
-            <div
-              className="w-[0] h-[100vh] bg-[#1c1b23] fixed z-40"
-              style={{ transition: ".3s" }}
-            >
-              <div
-                className="w-0 h-[60px]  flex justify-start items-center "
-                style={{ transition: ".3s" }}
-              >
-                <RxCross2
-                  className="flex md:hidden lg:hidden text-[white] text-[22px] ml-[20px]"
-                  onClick={() => {
-                    setToggleSidebar(false);
-                  }}
-                />
-              </div>
-              <div
-                className="w-0 overflow-hidden h-[calc(100%-60px)] mt-[-60px] rounded-lg bg-[#1c1b23] flex flex-col justify-center text-[#888888] px-[0] py-[40px]"
-                style={{ transition: ".3s" }}
-              >
-                <span className="flex justify-start items-center opacity-0 h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
-                  <a
-                    className="flex justify-start items-center"
-                    href="https://www.instagram.com/himadri.1/"
-                  >
-                    <FaInstagram className="mr-[10px] text-[22px] " /> Instagram
-                  </a>
-                </span>
-                <span className="flex justify-start items-center opacity-0 h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
-                  <a
-                    className="flex justify-start items-center"
-                    href="https://www.facebook.com/Himadri.Artist"
-                  >
-                    <FaFacebookF className="mr-[10px] text-[22px] " /> Facebook
-                  </a>
-                </span>
-                <span className="flex justify-start items-center opacity-0 h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
-                  <a
-                    className="flex justify-start items-center"
-                    href="https://github.com/WRATH2002"
-                  >
-                    <FaGithub className="mr-[10px] text-[22px] " /> Github
-                  </a>
-                </span>
-                <span className="flex justify-start items-center opacity-0 h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
-                  <a
-                    className="flex justify-start items-center"
-                    href="https://www.linkedin.com/in/himadri-purkait-315193272/"
-                  >
-                    <FaLinkedinIn className="mr-[10px] text-[22px] " /> Linkedin
-                  </a>
-                </span>
-                <span className="flex justify-start items-center opacity-0 h-[40px]  my-[6px] hover:text-[#2bd576] text-[17px] font-[mukta] font-medium text-[#888888] leading-[16px] mt-[4px]">
-                  <a
-                    className="flex justify-start items-center"
-                    href="https://twitter.com/himadri_02"
-                  >
-                    <FaXTwitter className="mr-[10px] text-[22px] " /> Twitter
-                  </a>
-                </span>
-              </div>
-            </div>
-          </>
-        )}
-        <Banner data1={toggleSidebar} data2={setToggleSidebar} />
-      </div>
+            </>
+          ) : (
+            <></>
+          )}
+        </div>
+      )}
+      {/* <Projects /> */}
     </>
   );
 }
