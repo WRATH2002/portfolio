@@ -16,7 +16,7 @@ const Tech = () => {
         {" "}
         <div
           className={
-            "text-[24px] ml-[0px] md:ml-[110px] lg:ml-[110px]" +
+            "text-[24px] ml-[0px] md:ml-[110px] lg:ml-[110px] " +
             (anime ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
           }
           style={{

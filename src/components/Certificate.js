@@ -10,9 +10,9 @@ import { Certificates } from "./Constant";
 
 const arr = [i1, i2, i3, i4, i5, i6, i7];
 
-const Certificate = () => {
+const Certificate = (props) => {
   const [expand, setExpand] = useState(false);
-  const [indexPro, setIndexPro] = useState(0);
+  const [indexPro, setIndexPro] = useState(props?.index);
   const [anime, setAnime] = useState(false);
   const [anime2, setAnime2] = useState(false);
   const [scrollPercentage, setScrollPercentage] = useState(0);

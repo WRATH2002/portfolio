@@ -111,7 +111,7 @@ Gain a deeper understanding of your finances through visual data representations
     type: "Individual Project",
     timeline: "Nov 23 - May 24",
     // role: "Individual project",
-    techStack: "ReactJS, JavaScript, HTML, CSS, Tailwind, Firebase",
+    techStack: "ReactJS, JavaScript, Redux, HTML, CSS, Tailwind, Firebase",
     about: `Infinity is an advanced N-to-N chatting platform that redefines seamless communication with its responsive design and rich media sharing capabilities. Whether you're chatting on your smartphone or PC, Infinity ensures a smooth and consistent experience across all devices.`,
     keyFeatures: `
 With Infinity, you can effortlessly create and manage chat groups, making it easy to stay connected with friends, family, or colleagues. Share status updates, engage in dynamic one-on-one or group conversations, and enhance your interactions with photos, videos, and GIFs. The platform's responsive design adapts to any screen size, ensuring a user-friendly experience no matter where you are.

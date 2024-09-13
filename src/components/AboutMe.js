@@ -110,7 +110,7 @@ const AboutMe = () => {
     <>
       <div
         className={
-          "w-full h-auto min-h-[100svh] flex justify-start items-center text-[14px]  gradientBG2" +
+          "w-full h-auto min-h-[100svh] flex justify-start items-center text-[14px]  " +
           (dark ? " bg-[#191A2C] text-[white]" : " bg-[#ffffff] text-[black]")
         }
       >

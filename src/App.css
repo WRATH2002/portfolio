@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.v {
+  /* background-color: #4caf50; */
+  background-image: url(/src/assets/img/f.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 0px;

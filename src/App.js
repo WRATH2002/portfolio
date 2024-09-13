@@ -66,7 +66,7 @@ function App() {
       {timer ? (
         <Smartphone />
       ) : (
-        <div className="w-full h-[100svh] flex flex-col justify-center items-center">
+        <div className="w-full h-[100svh] flex flex-col justify-center items-center ">
           {/* <l-ring
             size="40"
             stroke="5"
