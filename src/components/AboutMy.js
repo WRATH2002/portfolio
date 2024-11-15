@@ -141,6 +141,14 @@ Jadavpur Vidyapith`}</div>
               {`Ranked 21st in the 2nd Year Academic Session at the University of Engineering and Management.`}
             </div>
           </div>
+          <div className="flex justify-between items-start mt-[15px]">
+            <div className="min-w-[100px] md:min-w-[100px] lg:w-[100px] text-[#6161619e]">
+              2024
+            </div>
+            <div className="ml-[10px] md:ml-[20px] lg:ml-[20px]">
+              {`Ranked 18th in the 3rd Year Academic Session at the University of Engineering and Management.`}
+            </div>
+          </div>
         </pre>
       </div>
       <div className="mb-[60px]"></div>

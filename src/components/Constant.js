@@ -168,7 +168,7 @@ The wearable device continuously tracks and displays your heart rate (BPM), prov
 Accessible on both desktops and mobile devices, CheckYourHealth ensures you can stay connected to your health data wherever you are. The wearable device is powered by Arduino Uno, along with an accelerometer, gyroscope, and RTC modules, making it a reliable and efficient tool for continuous health monitoring.`,
     githubLink: "https://github.com/WRATH2002/Diversion2K24",
     githubRepoName: "Diversion2K24",
-    websiteLink: "https://checkyourhealth.netlify.app/",
+    websiteLink: "https://checkyourhealth.vercel.app/",
   },
   {
     name: "WallE",
