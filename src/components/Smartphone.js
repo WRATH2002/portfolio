@@ -335,6 +335,9 @@ const About = (props) => {
           About
         </div>
         <div className="w-full md:w-[calc(100%-110px)] lg:w-[calc(100%-110px)] ml-0 md:ml-[30px] lg:ml-[30px] flex flex-col justify-start items-start flex-wrap text-[#404040]">
+          {/* <div className="text-[13px] px-[8px] py-[4px] rounded-md mb-[10px] text-[] bg-[#F5F5F5]">
+            About
+          </div> */}
           <div className="w-full flex flex-wrap">
             I'm Himadri Purkait, a passionate frontend web developer and B.Tech
             CSE undergraduate based in Kolkata, West Bengal.

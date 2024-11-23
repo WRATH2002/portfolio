@@ -97,6 +97,7 @@ Gain a deeper understanding of your finances through visual data representations
     githubLink: "https://github.com/WRATH2002/Splitwise",
     githubRepoName: "Splitwise",
     websiteLink: "https://splitwiseio.vercel.app/",
+    tags: "reactjs,html,css,javascript,tailwind,vercel,firebase,vscode,github",
   },
   {
     name: "Infinity",
@@ -120,6 +121,7 @@ Infinity also offers features like time usage tracking and chatting habit monito
     githubLink: "https://github.com/WRATH2002/infinity",
     githubRepoName: "infinity",
     websiteLink: "https://infinityio.netlify.app/",
+    tags: "reactjs,redux,html,css,javascript,tailwind,netlify,firebase,vscode,github",
   },
   {
     name: "PlayNext",
@@ -145,6 +147,7 @@ For a truly personalized experience, PlayNext offers AI-powered suggestions for 
     githubLink: "https://github.com/WRATH2002/PlayNext",
     githubRepoName: "PlayNext",
     websiteLink: "https://playnextio.vercel.app/",
+    tags: "reactjs,redux,html,css,javascript,tailwind,vercel,vscode,github",
   },
 
   {
@@ -169,6 +172,7 @@ Accessible on both desktops and mobile devices, CheckYourHealth ensures you can 
     githubLink: "https://github.com/WRATH2002/Diversion2K24",
     githubRepoName: "Diversion2K24",
     websiteLink: "https://checkyourhealth.vercel.app/",
+    tags: "reactjs,html,css,javascript,tailwind,vercel,firebase,arduino,python,vscode,github",
   },
   {
     name: "WallE",
@@ -191,13 +195,14 @@ Built with a robust tech stack that includes ReactJS, React Redux, Firebase, Jav
     githubLink: "https://github.com/WRATH2002/walle",
     githubRepoName: "walle",
     websiteLink: "https://walleio.vercel.app/",
+    tags: "reactjs,redux,html,css,javascript,tailwind,vercel,firebase,vscode,github",
   },
 ];
 
 export const ExtraProjectsData = [
   {
     name: "GetWeather",
-    about: `<b className="font-semibold ">GetWeather</b> – a global weather forecasting website providing real-time weather details with a configurable UI. Access accurate weather data anywhere in the world on a responsive platform.`,
+    about: `GetWeather – a global weather forecasting website providing real-time weather details with a configurable UI. Access accurate weather data anywhere in the world on a responsive platform.`,
     keyFeatures: `
     •  Fetches real-time weather data using the OpenWeatherMap API.
     •  Displays comprehensive weather details, including temperature, humidity, and more.
@@ -206,10 +211,11 @@ export const ExtraProjectsData = [
     githubLink: "https://github.com/WRATH2002/weatherio",
     githubRepoName: "weatherio",
     websiteLink: "https://getweatherio.netlify.app/",
+    tags: "reactjs,html,css,javascript,netlify,vscode,github",
   },
   {
     name: "Mine It",
-    about: `<b className="font-semibold ">Mine It</b> – a thrilling block-finding game where players must uncover diamond blocks while avoiding hidden bombs. Test your skills across easy, medium, and hard difficulty levels.`,
+    about: `Mine It – a thrilling block-finding game where players must uncover diamond blocks while avoiding hidden bombs. Test your skills across easy, medium, and hard difficulty levels.`,
     keyFeatures: `
     •  Select from easy, medium, and hard difficulty modes.
     •  Uncover diamond blocks without triggering bomb blocks.
@@ -218,10 +224,11 @@ export const ExtraProjectsData = [
     githubLink: "https://github.com/WRATH2002/mineit",
     githubRepoName: "mineit",
     websiteLink: "https://mineitio.netlify.app/",
+    tags: "reactjs,html,css,javascript,tailwind,netlify,vscode,github",
   },
   {
     name: "Tic Tac Toe",
-    about: `<b className="font-semibold ">Tic Tac Toe</b> - a classic Tic Tac Toe game, built for seamless play on any device. Enjoy strategic gameplay with a responsive design for both smartphones and PCs.`,
+    about: `Tic Tac Toe - a classic Tic Tac Toe game, built for seamless play on any device. Enjoy strategic gameplay with a responsive design for both smartphones and PCs.`,
     keyFeatures: `
     •  Modes like Singleplayer and Multiplayer.
     •  Fully responsive design for an optimal experience on smartphones and PCs.
@@ -229,11 +236,12 @@ export const ExtraProjectsData = [
     githubLink: "https://github.com/WRATH2002/tic-tac-toe",
     githubRepoName: "tic-tac-toe",
     websiteLink: "https://squidtictactoe.netlify.app/",
+    tags: "reactjs,html,css,javascript,tailwind,netlify,vscode,github",
   },
 
   {
     name: "My Calculator",
-    about: `<b className="font-semibold ">My Calculator</b> – a simple yet powerful calculator application designed with a clean and intuitive interface. Perform various arithmetic calculations effortlessly on any device.`,
+    about: `My Calculator – a simple yet powerful calculator application designed with a clean and intuitive interface. Perform various arithmetic calculations effortlessly on any device.`,
     keyFeatures: `
     •  Perform basic arithmetic operations: addition, subtraction, multiplication, and division.
     •  Clear the current input or reset the calculator with ease.
@@ -241,6 +249,7 @@ export const ExtraProjectsData = [
     githubLink: "https://github.com/WRATH2002/calculator",
     githubRepoName: "calculator",
     websiteLink: "https://mycalculatorio.netlify.app/",
+    tags: "reactjs,html,css,javascript,tailwind,netlify,vscode,github",
   },
 ];
 
@@ -314,32 +323,65 @@ export const techName = [
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
   },
   {
-    name: "JavaScript",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-  },
-  {
     name: "HTML",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-  },
-  {
-    name: "CSS",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-  },
-  {
-    name: "Tailwind",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  },
-  {
-    name: "Firebase",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
   },
   {
     name: "C",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
   },
   {
+    name: "CSS",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+  },
+
+  {
+    name: "Java",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+  },
+  {
+    name: "Tailwind",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  {
+    name: "Redux",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+  },
+  {
+    name: "JavaScript",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+  },
+  {
     name: "Python",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+  },
+  {
+    name: "Arduino",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg",
+  },
+];
+export const techName2 = [
+  {
+    name: "Firebase",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+  },
+  {
+    name: "MySQL",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+  },
+];
+export const techName3 = [
+  {
+    name: "Vercel",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+  },
+  {
+    name: "Netlify",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg",
+  },
+  {
+    name: "AWS",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
   },
   {
     name: "GitHub",
@@ -349,12 +391,20 @@ export const techName = [
     name: "VSCode",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
   },
+];
+
+export const techName4 = [
   {
-    name: "Vercel",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+    name: "AWS",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+  },
+
+  {
+    name: "GitHub",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
   },
   {
-    name: "Netlify",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg",
+    name: "VSCode",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
   },
 ];

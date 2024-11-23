@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { aboutData } from "./Constant";
+import { UserRoundSearch } from "lucide-react";
 
 // Default values shown
 
@@ -16,7 +17,7 @@ const AboutMy = () => {
     <div className="w-full h-[100svh] overflow-y-scroll flex flex-col justify-start items-start text-[15px] pt-[20px] md:pt-[50px] lg:pt-[50px] text-[#404040]">
       <div
         className={
-          "text-[24px] ml-[0px] md:ml-[110px] lg:ml-[110px] " +
+          "text-[24px] ml-[0px] md:ml-[110px] lg:ml-[110px] flex justify-start items-center" +
           (anime ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
         }
         style={{
@@ -24,6 +25,12 @@ const AboutMy = () => {
           transitionDelay: anime ? ".2s" : "0s",
         }}
       >
+        <UserRoundSearch
+          width={22}
+          height={22}
+          strokeWidth={2.2}
+          className="mr-[9px]"
+        />{" "}
         About Me
       </div>
       <div

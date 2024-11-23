@@ -212,7 +212,7 @@ const TechStack = (props) => {
               }
               style={{ transition: " opacity .3s", transitionDelay: ".2s" }}
             >
-              <div className="w-[calc(100%+40px)] h-[calc(100%/4)] flex justify-between items-start">
+              {/* <div className="w-[calc(100%+40px)] h-[calc(100%/4)] flex justify-between items-start">
                 <div
                   className={
                     "w-[40px] aspect-square flex justify-center items-center rounded-full border-[1px] border-dashed i2" +
@@ -245,9 +245,9 @@ const TechStack = (props) => {
                     <SiMysql />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
-            <div
+            {/* <div
               className={
                 "min-w-[270px] min-h-[270px] text-[28px] rounded-full border-[1px] border-dashed flex justify-center items-center flex-col r1" +
                 (props?.dark ? " border-[#5c5f9e]" : " border-[#c1c1c1]") +
@@ -377,7 +377,7 @@ const TechStack = (props) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </>
         )}
       </div>
