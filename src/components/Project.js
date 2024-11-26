@@ -5,11 +5,13 @@ import React, { useEffect, useRef, useState } from "react";
 // import youtube from "../assets/img/youtube.webp";
 import { VscVscode } from "react-icons/vsc";
 import im from "../assets/img/walleLogo.png";
+import brainwaveLogo from "../assets/img/groupzillaLogo.png";
 import splitwiseLogo from "../assets/img/splitwiseLogo.png";
 import walleLogo from "../assets/img/walleLogo.png";
 import playnextLogo from "../assets/img/playnextLogo.png";
 import infinityLogo from "../assets/img/infinityLogo.png";
 import vitalcareLogo from "../assets/img/VitalCareLogo.png";
+import SudokuLogo from "../assets/img/SudokuS2.png";
 
 import sound from "../assets/music/1.mp3";
 import { ProjectsData } from "./Constant";
@@ -27,12 +29,15 @@ import css from "../assets/img/css.png";
 import python from "../assets/img/python.png";
 import firebase from "../assets/img/firebase.png";
 import ExtraProjects from "./ExtraProjects";
+import { OctagonAlert } from "lucide-react";
 
 const arr = [
+  brainwaveLogo,
   splitwiseLogo,
   infinityLogo,
   playnextLogo,
   vitalcareLogo,
+  SudokuLogo,
   walleLogo,
 ];
 
@@ -88,7 +93,7 @@ const Project = (props) => {
         <></>
       )} */}
       <div className="w-full md:w-[calc(100%-70px)] lg:w-[calc(100%-70px)] flex flex-col justify-start items-center h-full font-[geist] text-[#404040] text-[15px]">
-        <div className="h-[100svh] w-[350px] bg-white left-[60px] top-0 fixed z-50 hidden md:flex lg:flex flex-col justify-start items-start p-[15px] border-r border-[#ededed]">
+        <div className="h-[100svh] w-[350px] bg-white left-[60px] top-0 fixed z-50 hidden md:flex lg:flex flex-col justify-start items-start p-[15px] border-r border-[#ededed] overflow-y-scroll">
           <div
             className={
               "w-full h-auto flex-col justify-start items-start" +
@@ -113,8 +118,20 @@ const Project = (props) => {
                 </>
               ) : (
                 <>
-                  <span className="text-black">
+                  <span className="text-black flex justify-start items-center">
                     {ProjectsData[indexPro]?.name}
+                    {ProjectsData[indexPro]?.ongoing ? (
+                      <>
+                        <OctagonAlert
+                          width={14}
+                          height={14}
+                          strokeWidth={1.7}
+                          className="ml-[6px] text-[red]"
+                        />
+                      </>
+                    ) : (
+                      <></>
+                    )}
                   </span>
                   <span className="overflow-hidden text-ellipsis line-clamp-2 w-full text-[#707070] ">
                     {ProjectsData[indexPro]?.keyFeatures}
@@ -137,8 +154,20 @@ const Project = (props) => {
                       }}
                       // style={{ transition: ".3s" }}
                     >
-                      <span className="text-black">
+                      <span className="text-black flex justify-start items-center">
                         {ProjectsData[index]?.name}
+                        {ProjectsData[index]?.ongoing ? (
+                          <>
+                            <OctagonAlert
+                              width={14}
+                              height={14}
+                              strokeWidth={1.7}
+                              className="ml-[6px] text-[red]"
+                            />
+                          </>
+                        ) : (
+                          <></>
+                        )}
                       </span>
                       <span className="overflow-hidden  text-ellipsis line-clamp-2 w-full text-[#707070] ">
                         {ProjectsData[index]?.keyFeatures}
@@ -191,7 +220,7 @@ const Project = (props) => {
         ></div>
         <div
           className={
-            "h-[100svh] w-[350px] bg-white left-0 top-0 fixed z-50 flex flex-col justify-start items-end p-[15px] " +
+            "h-[100svh] w-[350px] bg-white left-0 top-0 fixed z-50 flex flex-col justify-start items-end p-[15px] overflow-y-scroll " +
             (expand ? " ml-[0px]" : " ml-[-400px]")
           }
           style={{ transition: ".3s" }}
@@ -243,8 +272,20 @@ const Project = (props) => {
                 </>
               ) : (
                 <>
-                  <span className="text-black">
-                    {ProjectsData[indexPro]?.name}
+                  <span className="text-black flex justify-start items-center">
+                    {ProjectsData[indexPro]?.name}{" "}
+                    {ProjectsData[indexPro]?.ongoing ? (
+                      <>
+                        <OctagonAlert
+                          width={14}
+                          height={14}
+                          strokeWidth={1.7}
+                          className="ml-[6px] text-[red]"
+                        />
+                      </>
+                    ) : (
+                      <></>
+                    )}
                   </span>
                   <span className="overflow-hidden text-ellipsis line-clamp-2 w-full text-[#707070] ">
                     {ProjectsData[indexPro]?.keyFeatures}
@@ -268,8 +309,20 @@ const Project = (props) => {
                       }}
                       // style={{ transition: ".3s" }}
                     >
-                      <span className="text-black">
+                      <span className="text-black flex justify-start items-center">
                         {ProjectsData[index]?.name}
+                        {ProjectsData[index]?.ongoing ? (
+                          <>
+                            <OctagonAlert
+                              width={14}
+                              height={14}
+                              strokeWidth={1.7}
+                              className="ml-[6px] text-[red]"
+                            />
+                          </>
+                        ) : (
+                          <></>
+                        )}
                       </span>
                       <span className="overflow-hidden  text-ellipsis line-clamp-2 w-full text-[#707070] ">
                         {ProjectsData[index]?.keyFeatures}
@@ -353,6 +406,30 @@ const Project = (props) => {
               ref={contentRef}
               onScroll={handleScroll}
             >
+              {ProjectsData[indexPro]?.ongoing ? (
+                <>
+                  <div
+                    className={
+                      "min-h-[30px] px-[10px]  ml-[5px] mb-[-35px] z-10 flex justify-center items-center border-[1.5px] border-[#ffffff3e] bg-[#ffffffbf] text-[black] rounded-lg " +
+                      (anime ? " mt-[5px] opacity-100" : " mt-[15px] opacity-0")
+                    }
+                    style={{
+                      transition: anime ? ".4s" : "none",
+                      transitionDelay: anime ? ".3s" : "0s",
+                    }}
+                  >
+                    <OctagonAlert
+                      width={18}
+                      height={18}
+                      strokeWidth={1.7}
+                      className="mr-[7px] text-[red]"
+                    />
+                    Under Development
+                  </div>
+                </>
+              ) : (
+                <></>
+              )}
               <img
                 src={arr[indexPro]}
                 // src="https://drive.google.com/drive/u/4/folders/18WIKc9rYMs8J8L8jQpNQsHiW6x7Rbr9J"
@@ -385,55 +462,110 @@ const Project = (props) => {
                 </div>
 
                 <div className="flex justify-start items-start">
-                  <a
-                    className="px-[11px] h-[30px] text-[14px] rounded-lg mt-[5px] text-[#6161619e] border  border-[#e4e3e3] hover:text-black flex justify-center items-center"
-                    href={ProjectsData[indexPro]?.websiteLink}
-                    target="_blank"
-                  >
-                    <div className="mr-[7px]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-link-2"
-                      >
-                        <path d="M9 17H7A5 5 0 0 1 7 7h2" />
-                        <path d="M15 7h2a5 5 0 1 1 0 10h-2" />
-                        <line x1="8" x2="16" y1="12" y2="12" />
-                      </svg>
+                  {ProjectsData[indexPro]?.ongoing ? (
+                    <div
+                      className="px-[11px] h-[30px] text-[14px] rounded-lg mt-[5px] text-[#6161619e] border  border-[#e4e3e3] flex justify-center items-center cursor-not-allowed"
+                      // href={ProjectsData[indexPro]?.websiteLink}
+                      // target="_blank"
+                    >
+                      <div className="mr-[7px]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-link-2"
+                        >
+                          <path d="M9 17H7A5 5 0 0 1 7 7h2" />
+                          <path d="M15 7h2a5 5 0 1 1 0 10h-2" />
+                          <line x1="8" x2="16" y1="12" y2="12" />
+                        </svg>
+                      </div>
+                      Live Demo
                     </div>
-                    Live Demo
-                  </a>
-                  <a
-                    className="px-[11px] h-[30px] text-[14px] ml-[8px] rounded-lg mt-[5px] text-[#6161619e] border hover:text-black   border-[#e4e3e3] flex justify-center items-center"
-                    href={ProjectsData[indexPro]?.githubLink}
-                    target="_blank"
-                  >
-                    <div className="mr-[7px]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-github"
-                      >
-                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-                        <path d="M9 18c-4.51 2-5-2-7-2" />
-                      </svg>
+                  ) : (
+                    <a
+                      className="px-[11px] h-[30px] text-[14px] rounded-lg mt-[5px] text-[#6161619e] border  border-[#e4e3e3] hover:text-black flex justify-center items-center"
+                      href={ProjectsData[indexPro]?.websiteLink}
+                      target="_blank"
+                    >
+                      <div className="mr-[7px]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-link-2"
+                        >
+                          <path d="M9 17H7A5 5 0 0 1 7 7h2" />
+                          <path d="M15 7h2a5 5 0 1 1 0 10h-2" />
+                          <line x1="8" x2="16" y1="12" y2="12" />
+                        </svg>
+                      </div>
+                      Live Demo
+                    </a>
+                  )}
+                  {ProjectsData[indexPro]?.ongoing ? (
+                    <div
+                      className="px-[11px] h-[30px] text-[14px] ml-[8px] rounded-lg mt-[5px] text-[#6161619e] border cursor-not-allowed  border-[#e4e3e3] flex justify-center items-center"
+                      // href={ProjectsData[indexPro]?.githubLink}
+                      // target="_blank"
+                    >
+                      <div className="mr-[7px]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-github"
+                        >
+                          <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                          <path d="M9 18c-4.51 2-5-2-7-2" />
+                        </svg>
+                      </div>
+                      GitHub Repo
                     </div>
-                    GitHub Repo
-                  </a>
+                  ) : (
+                    <a
+                      className="px-[11px] h-[30px] text-[14px] ml-[8px] rounded-lg mt-[5px] text-[#6161619e] border hover:text-black   border-[#e4e3e3] flex justify-center items-center"
+                      href={ProjectsData[indexPro]?.githubLink}
+                      target="_blank"
+                    >
+                      <div className="mr-[7px]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-github"
+                        >
+                          <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                          <path d="M9 18c-4.51 2-5-2-7-2" />
+                        </svg>
+                      </div>
+                      GitHub Repo
+                    </a>
+                  )}
                 </div>
 
                 <div className="w-full flex justify-start items-start mt-[25px]">

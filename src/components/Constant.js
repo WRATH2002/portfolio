@@ -75,6 +75,33 @@
 
 export const ProjectsData = [
   {
+    ongoing: true,
+    name: "Brainwave",
+    points: [
+      "Organize work seamlessly with dedicated team channels.",
+      "Send and share documents effortlessly.",
+      "AI integration for smarter, faster communication.",
+      "Search chats and files with ease.",
+      "Clean and intuitive user interface.",
+      "Real-time collaboration features for teams.",
+      "Perfect for individuals and teams aiming for productivity.",
+    ],
+    type: "Individual Project",
+    timeline: "Sept 24 - Nov 24",
+    // role: "Individual project",
+    techStack: "ReactJS, JavaScript, HTML, CSS, Tailwind, Firebase, Gemini API",
+    about: `
+Introducing Brainwave, the ultimate platform for teams and individuals to seamlessly organize their work and foster efficient collaboration. Say goodbye to cluttered communication and disorganized workflows. Brainwave combines advanced functionality with a clean, intuitive interface to revolutionize the way you work. Whether it's creating channels for different departments, sharing documents, or leveraging AI for smarter communication, Brainwave is your one-stop solution for productivity and collaboration.`,
+    keyFeatures: `
+Streamline your workflow with Brainwave, the all-in-one platform for focused communication and efficient collaboration. Create dedicated channels for teams, effortlessly share and search documents, and leverage AI-powered tools to simplify discussions and boost productivity.
+
+With its clean, minimalist UI and real-time collaboration features, Brainwave adapts to your needs, empowering teams and individuals to stay organized and perform at their best.`,
+    githubLink: "none",
+    githubRepoName: "none",
+    websiteLink: "none",
+    tags: "reactjs,html,css,javascript,tailwind,vercel,firebase,vscode,github",
+  },
+  {
     name: "Splitwise",
     points: [
       "Auto-extract transaction details from images.",
@@ -173,6 +200,31 @@ Accessible on both desktops and mobile devices, CheckYourHealth ensures you can 
     githubRepoName: "Diversion2K24",
     websiteLink: "https://checkyourhealth.vercel.app/",
     tags: "reactjs,html,css,javascript,tailwind,vercel,firebase,arduino,python,vscode,github",
+  },
+  {
+    name: "Sudoku Multiplayer",
+    points: [
+      "Engage in multiplayer Sudoku games with friends in real-time.",
+      "Create or join private rooms for an interactive Sudoku experience.",
+      "Chat feature for seamless communication during gameplay.",
+      "Share room links easily via QR codes or copy-to-clipboard functionality.",
+      "Supports all traditional Sudoku features with added multiplayer elements.",
+    ],
+    type: "Individual Project",
+    timeline: "Oct 24 - Nov 24",
+    techStack:
+      "ReactJS, JavaScript, HTML, CSS, Tailwind CSS, Firebase (Realtime Database)",
+    about:
+      "Sudoku Multiplayer is a modern take on the classic Sudoku game, allowing players to collaborate or compete with friends in real-time. With a focus on accessibility and user engagement, this project combines traditional Sudoku gameplay with exciting multiplayer features and intuitive room-sharing capabilities.",
+    keyFeatures: `
+The application provides a robust multiplayer experience, enabling players to create or join rooms and solve Sudoku puzzles together. Players can communicate during the game using the integrated chat feature, fostering collaboration and fun.
+
+Room links can be effortlessly shared via QR codes or by copying the link to the clipboard, ensuring smooth access for all participants. The game retains all traditional Sudoku functionalities, ensuring a familiar yet enhanced experience. Powered by Firebase Realtime Database, the application ensures a seamless and responsive gaming experience for all users.
+`,
+    githubLink: "https://github.com/WRATH2002/Sudoku",
+    githubRepoName: "Sudoku",
+    websiteLink: "https://sudokuio.vercel.app/",
+    tags: "reactjs,html,css,javascript,tailwind,firebase,vercel,vscode,github",
   },
   {
     name: "WallE",

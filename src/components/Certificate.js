@@ -287,7 +287,7 @@ const Certificate = (props) => {
           </div>
         </div>
         <div className="w-full h-[60px] px-[20px] flex md:hidden lg:hidden justify-between items-center fixed top-0 left-0 border border-[#ededed] bg-gradient-to-t from-[#ffffffce] to-[#ffffff] backdrop-blur-2xl ">
-          <div>Projects</div>
+          <div>Certificates</div>
           <div
             className="-rotate-90"
             onClick={() => {
