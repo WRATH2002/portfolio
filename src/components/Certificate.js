@@ -383,7 +383,7 @@ const Certificate = (props) => {
                 {Certificates[indexPro].date}
               </div>
             </div>
-            {Certificates[indexPro]?.platform.length != 0 ? (
+            {Certificates[indexPro]?.platform?.length != 0 ? (
               <div className="w-full flex justify-start items-start mt-[7px]">
                 <div className="w-[100px] flex justify-start text-[#6161619e]">
                   Platform
@@ -395,7 +395,7 @@ const Certificate = (props) => {
             ) : (
               <></>
             )}
-            {Certificates[indexPro]?.type.length != 0 ? (
+            {Certificates[indexPro]?.type?.length != 0 ? (
               <div className="w-full flex justify-start items-start mt-[7px]">
                 <div className="w-[100px] flex justify-start text-[#6161619e]">
                   Type
@@ -448,13 +448,13 @@ const Certificate = (props) => {
                   </div> */}
                 </div>
               )}
-              {indexPro == Certificates.length - 1 ? (
+              {indexPro == Certificates?.length - 1 ? (
                 <></>
               ) : (
                 <div
                   className="px-[15px] h-full flex justify-center items-center ml-[15px] border border-[#ededed] rounded-xl cursor-pointer"
                   onClick={() => {
-                    if (indexPro != Certificates.length - 1) {
+                    if (indexPro != Certificates?.length - 1) {
                       setAnime(false);
                       scrollToTop();
                       setIndexPro(indexPro + 1);

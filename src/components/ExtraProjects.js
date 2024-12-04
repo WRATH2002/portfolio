@@ -93,11 +93,11 @@ const ExtraProjects = () => {
         >
           {/* <div className="w-full md:w-[250px] lg:w-[250px]  h-[200px] md:h-[170px] lg:h-[170px] rounded-2xl bg-[#efefef]"></div> */}
           <div className="w-full border border-[#efefef] hover:bg-[#f5f5f5] cursor-pointer rounded-2xl flex flex-col justify-start items-start  p-[20px] ">
-            <div className="text-[22px]">Weatherio</div>
+            <div className="text-[22px]">GetWeather</div>
             <div className="text-[15px] text-[#404040] mt-[5px]">
-              Mine It – a thrilling block-finding game where players must
-              uncover diamond blocks while avoiding hidden bombs. Test your
-              skills across easy, medium, and hard difficulty levels.
+              GetWeather – a global weather forecasting website providing
+              real-time weather details with a configurable UI. Access accurate
+              weather data anywhere in the world on a responsive platform.
             </div>
             <Same />
           </div>
@@ -123,14 +123,14 @@ const ExtraProjects = () => {
           <div className="w-full border border-[#efefef] hover:bg-[#f5f5f5] cursor-pointer rounded-2xl flex flex-col justify-start items-start  p-[20px] ">
             <div className="text-[22px]">Tic Tac Toe</div>
             <div className="text-[15px] text-[#404040] mt-[5px]">
-              Mine It – a thrilling block-finding game where players must
-              uncover diamond blocks while avoiding hidden bombs. Test your
-              skills across easy, medium, and hard difficulty levels.
+              Tic Tac Toe - a classic Tic Tac Toe game, built for seamless play
+              on any device. Enjoy strategic gameplay with a responsive design
+              for both smartphones and PCs.
             </div>
             <Same />
           </div>
         </a>
-        <a
+        {/* <a
           href="https://mycalculatorio.netlify.app/"
           target="_blank"
           className={
@@ -142,7 +142,7 @@ const ExtraProjects = () => {
             transitionDelay: anime ? ".9s" : "0s",
           }}
         >
-          {/* <div className="w-full md:w-[250px] lg:w-[250px]  h-[200px] md:h-[170px] lg:h-[170px] rounded-2xl bg-[#efefef]"></div> */}
+          
           <div className="w-full border border-[#efefef] hover:bg-[#f5f5f5] cursor-pointer rounded-2xl flex flex-col justify-start items-start  p-[20px] ">
             <div className="text-[22px]">My Calculator</div>
             <div className="text-[15px] text-[#404040] mt-[5px]">
@@ -152,7 +152,7 @@ const ExtraProjects = () => {
             </div>
             <Same />
           </div>
-        </a>
+        </a> */}
       </div>
     </div>
   );

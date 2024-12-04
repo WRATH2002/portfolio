@@ -291,18 +291,18 @@ export const ExtraProjectsData = [
     tags: "reactjs,html,css,javascript,tailwind,netlify,vscode,github",
   },
 
-  {
-    name: "My Calculator",
-    about: `My Calculator – a simple yet powerful calculator application designed with a clean and intuitive interface. Perform various arithmetic calculations effortlessly on any device.`,
-    keyFeatures: `
-    •  Perform basic arithmetic operations: addition, subtraction, multiplication, and division.
-    •  Clear the current input or reset the calculator with ease.
-    •  Responsive design for seamless use across different devices and screen sizes.`,
-    githubLink: "https://github.com/WRATH2002/calculator",
-    githubRepoName: "calculator",
-    websiteLink: "https://mycalculatorio.netlify.app/",
-    tags: "reactjs,html,css,javascript,tailwind,netlify,vscode,github",
-  },
+  // {
+  //   name: "My Calculator",
+  //   about: `My Calculator – a simple yet powerful calculator application designed with a clean and intuitive interface. Perform various arithmetic calculations effortlessly on any device.`,
+  //   keyFeatures: `
+  //   •  Perform basic arithmetic operations: addition, subtraction, multiplication, and division.
+  //   •  Clear the current input or reset the calculator with ease.
+  //   •  Responsive design for seamless use across different devices and screen sizes.`,
+  //   githubLink: "https://github.com/WRATH2002/calculator",
+  //   githubRepoName: "calculator",
+  //   websiteLink: "https://mycalculatorio.netlify.app/",
+  //   tags: "reactjs,html,css,javascript,tailwind,netlify,vscode,github",
+  // },
 ];
 
 export const Certificates = [
@@ -350,6 +350,7 @@ export const Certificates = [
   },
   {
     name: "Diversion 2K24",
+    platform: "",
     date: "3-4th Feb, 2024",
     type: "Participation",
     link: "https://drive.google.com/file/d/1y8hXdnSzZTl-GUOfP-SveNWFJEeSEMpJ/view?usp=drive_link",
