@@ -76,7 +76,7 @@
 export const ProjectsData = [
   {
     ongoing: true,
-    name: "Brainwave",
+    name: "Brainwave - [delayed]",
     points: [
       "Organize work seamlessly with dedicated team channels.",
       "Send and share documents effortlessly.",
@@ -101,6 +101,7 @@ With its clean, minimalist UI and real-time collaboration features, Brainwave ad
     websiteLink: "none",
     tags: "reactjs,html,css,javascript,tailwind,vercel,firebase,vscode,github",
   },
+
   {
     name: "Splitwise",
     points: [
@@ -248,6 +249,33 @@ Built with a robust tech stack that includes ReactJS, React Redux, Firebase, Jav
     githubRepoName: "walle",
     websiteLink: "https://walleio.vercel.app/",
     tags: "reactjs,redux,html,css,javascript,tailwind,vercel,firebase,vscode,github",
+  },
+  {
+    // ongoing: true,
+    name: "JSON Beauty",
+    points: [
+      "Easily format and beautify JSON data.",
+      "Validate JSON structure with real-time error detection.",
+      "Syntax highlighting for better readability.",
+      "Supports collapsible graph view for nested JSON.",
+      // "Dark mode for a seamless coding experience.",
+      "Lightweight and fast performance.",
+      "Copy formatted JSON with a single click.",
+      "Perfect for developers working with APIs and structured data.",
+    ],
+    type: "Individual Project",
+    timeline: "Mar 25 - Apr 25",
+    techStack: "ReactJS, JavaScript, HTML, CSS, Tailwind ",
+    about: `
+JSON Beauty is a powerful and intuitive JSON visualizer designed for developers. Whether you're working with API responses or structured data, JSON Beauty helps you format, validate, and debug JSON effortlessly. With real-time error detection, collapsible views, and syntax highlighting, it makes handling JSON a breeze. Say goodbye to messy JSON and improve your workflow with a clean and elegant visualizer.`,
+    keyFeatures: `
+Make JSON formatting effortless with JSON Beauty. This lightweight yet powerful tool helps you visualize and validate JSON data with ease. Its sleek UI, collapsible graph structure, and error detection capabilities make it perfect for developers working with structured data.
+
+With real-time formatting, syntax highlighting, and seamless dark mode, JSON Beauty ensures an optimized workflow, making JSON handling smoother than ever.`,
+    githubLink: "https://github.com/WRATH2002/JSONVisualizer",
+    githubRepoName: "JSONVisualizer",
+    websiteLink: "https://jsonbeautyio.vercel.app/",
+    tags: "reactjs,html,css,javascript,tailwind,monaco-editor,vscode,github",
   },
 ];
 

@@ -12,6 +12,7 @@ import playnextLogo from "../assets/img/playnextLogo.png";
 import infinityLogo from "../assets/img/infinityLogo.png";
 import vitalcareLogo from "../assets/img/VitalCareLogo.png";
 import SudokuLogo from "../assets/img/SudokuS2.png";
+import jsonLogo from "../assets/img/image.png";
 
 import sound from "../assets/music/1.mp3";
 import { ProjectsData } from "./Constant";
@@ -39,6 +40,7 @@ const arr = [
   vitalcareLogo,
   SudokuLogo,
   walleLogo,
+  jsonLogo,
 ];
 
 const Project = (props) => {

@@ -2,34 +2,53 @@ import React, { useState } from "react";
 
 const Arr = [
   {
+    name: "Brainwave - [delayed]",
+    sub: "A platform to seamlessly connect with your peers and manage your projects",
+    section: "project",
+    subsection: 0,
+  },
+  {
     name: "Splitwise",
     sub: "An expense tracking, maintaining website",
     section: "project",
-    subsection: 0,
+    subsection: 1,
   },
   {
     name: "Infinity",
     sub: "A n to n Chatting website",
     section: "project",
-    subsection: 1,
+    subsection: 2,
   },
   {
     name: "Playnext",
     sub: "A video platform with AI integrated",
     section: "project",
-    subsection: 2,
+    subsection: 3,
   },
   {
     name: "CheckYourHealth",
     sub: "An IOT based project for Senior Citizens",
     section: "project",
-    subsection: 3,
+    subsection: 4,
+  },
+  {
+    name: "Sudoku Multiplayer",
+    sub: "Sudoku game with multiplayer feature",
+    section: "project",
+    subsection: 5,
   },
   {
     name: "Walle",
     sub: "An AI Chatbot",
     section: "project",
-    subsection: 4,
+    subsection: 6,
+  },
+
+  {
+    name: "JSON Beauty",
+    sub: "A Json Visualizer",
+    section: "project",
+    subsection: 7,
   },
   {
     name: "Mineit",
@@ -96,7 +115,7 @@ const Arr = [
     name: "Diversion 2K24",
     sub: "Hackathon Participation Certificate",
     section: "certificate",
-    subsection: 0,
+    subsection: 6,
   },
   //   {
   //     name: "Splitwise",

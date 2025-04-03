@@ -135,7 +135,7 @@ const About = (props) => {
     <>
       <span
         className={
-          "text-[30px] ml-[0px] md:ml-[80px] lg:ml-[80px] w-full md:w-[calc(100%-80px)] lg:w-[calc(100%-80px)] flex justify-center items-center mb-[10px] font-[sky2] font-semibold tracking-wider " +
+          "text-[30px] ml-[0px] md:ml-[80px] lg:ml-[80px] w-full md:w-[calc(100%-80px)] lg:w-[calc(100%-80px)] flex justify-center items-center mb-[10px] font-[geist] font-semibold tracking-wider uppercase " +
           (anime
             ? " mt-[30px] md:mt-[40px] lg:mt-[40px] opacity-100"
             : " mt-[40px] md:mt-[50px] lg:mt-[50px] opacity-0")
@@ -382,7 +382,7 @@ const About = (props) => {
             style={{ transition: ".3s" }}
             onClick={() => {
               props?.setSection("project");
-              props?.setIndex(0);
+              props?.setIndex(2);
             }}
           >
             <div className="w-full h-[45px] flex justify-start items-center">
@@ -419,7 +419,7 @@ const About = (props) => {
             style={{ transition: ".3s" }}
             onClick={() => {
               props?.setSection("project");
-              props?.setIndex(1);
+              props?.setIndex(3);
             }}
           >
             <div className="w-full h-[45px] flex justify-start items-center">
@@ -456,7 +456,7 @@ const About = (props) => {
             style={{ transition: ".3s" }}
             onClick={() => {
               props?.setSection("project");
-              props?.setIndex(2);
+              props?.setIndex(4);
             }}
           >
             <div className="w-full h-[45px] flex justify-start items-center">
