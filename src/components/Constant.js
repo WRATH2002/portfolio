@@ -95,6 +95,7 @@ Introducing Brainwave, the ultimate platform for teams and individuals to seamle
     keyFeatures: `
 Streamline your workflow with Brainwave, the all-in-one platform for focused communication and efficient collaboration. Create dedicated channels for teams, effortlessly share and search documents, and leverage AI-powered tools to simplify discussions and boost productivity.
 
+
 With its clean, minimalist UI and real-time collaboration features, Brainwave adapts to your needs, empowering teams and individuals to stay organized and perform at their best.`,
     githubLink: "none",
     githubRepoName: "none",
@@ -121,6 +122,7 @@ With its clean, minimalist UI and real-time collaboration features, Brainwave ad
     keyFeatures: `
 Harness the power of automation with features like automatic transaction extraction from images, allowing you to capture and record expenses on the go. Splitting costs with friends or groups has never been easier, ensuring transparency and fairness in every transaction. Dive into your detailed transaction history to track every penny spent and uncover your spending patterns.
 
+
 Gain a deeper understanding of your finances through visual data representations and monthly reports that keep you informed and in control. Never miss a payment again with customizable reminders, and take charge of your budgeting by managing specific sub-categories. With Splitwise, staying financially organized is not just simple—it’s smart.`,
     githubLink: "https://github.com/WRATH2002/Splitwise",
     githubRepoName: "Splitwise",
@@ -144,6 +146,7 @@ Gain a deeper understanding of your finances through visual data representations
     about: `Infinity is an advanced N-to-N chatting platform that redefines seamless communication with its responsive design and rich media sharing capabilities. Whether you're chatting on your smartphone or PC, Infinity ensures a smooth and consistent experience across all devices.`,
     keyFeatures: `
 With Infinity, you can effortlessly create and manage chat groups, making it easy to stay connected with friends, family, or colleagues. Share status updates, engage in dynamic one-on-one or group conversations, and enhance your interactions with photos, videos, and GIFs. The platform's responsive design adapts to any screen size, ensuring a user-friendly experience no matter where you are.
+
 
 Infinity also offers features like time usage tracking and chatting habit monitoring, helping you stay aware of your communication patterns. Whether you're looking to streamline your chats or dive deep into media-rich conversations, Infinity provides the tools you need for a dynamic and connected experience.`,
     githubLink: "https://github.com/WRATH2002/infinity",
@@ -171,6 +174,7 @@ Infinity also offers features like time usage tracking and chatting habit monito
     keyFeatures: `
 With PlayNext, you can access real-time video data directly from the YouTube API, displaying essential details like titles, views, and durations. Engage with content like never before through real-time comment interactions, and enjoy a smooth browsing experience thanks to the Shimmer UI. The platform also features a smart search function, allowing you to find any video on YouTube effortlessly.
 
+
 For a truly personalized experience, PlayNext offers AI-powered suggestions for related videos, ensuring continuous and relevant content discovery. Additionally, the integrated AI can answer your questions about any video, making PlayNext a comprehensive tool for all your video-watching needs.`,
     githubLink: "https://github.com/WRATH2002/PlayNext",
     githubRepoName: "PlayNext",
@@ -196,6 +200,7 @@ For a truly personalized experience, PlayNext offers AI-powered suggestions for 
     keyFeatures: `
 The wearable device continuously tracks and displays your heart rate (BPM), providing real-time insights into your cardiovascular health. In the event of a sudden fall, the system detects and alerts, offering an added layer of safety. The platform's graphical data visualization helps you easily understand BPM trends and fall events, making it easier to monitor your health over time.
 
+
 Accessible on both desktops and mobile devices, CheckYourHealth ensures you can stay connected to your health data wherever you are. The wearable device is powered by Arduino Uno, along with an accelerometer, gyroscope, and RTC modules, making it a reliable and efficient tool for continuous health monitoring.`,
     githubLink: "https://github.com/WRATH2002/Diversion2K24",
     githubRepoName: "Diversion2K24",
@@ -220,6 +225,7 @@ Accessible on both desktops and mobile devices, CheckYourHealth ensures you can 
     keyFeatures: `
 The application provides a robust multiplayer experience, enabling players to create or join rooms and solve Sudoku puzzles together. Players can communicate during the game using the integrated chat feature, fostering collaboration and fun.
 
+
 Room links can be effortlessly shared via QR codes or by copying the link to the clipboard, ensuring smooth access for all participants. The game retains all traditional Sudoku functionalities, ensuring a familiar yet enhanced experience. Powered by Firebase Realtime Database, the application ensures a seamless and responsive gaming experience for all users.
 `,
     githubLink: "https://github.com/WRATH2002/Sudoku",
@@ -243,6 +249,7 @@ Room links can be effortlessly shared via QR codes or by copying the link to the
     about: `WallE is an AI-powered chatbot application designed to provide real-time interactions with an intelligent assistant. Whether you're seeking information or just engaging in casual conversation, WallE ensures a seamless chat experience tailored to your preferences.`,
     keyFeatures: `
 With WallE, you can effortlessly create and manage different chat segments, making your interactions organized and efficient. Personalize your chat sessions by choosing from a variety of avatars, and switch between dark and light modes for a viewing experience that suits your comfort. Powered by advanced AI technology, WallE delivers instant responses to your questions, keeping the conversation smooth and engaging.
+
 
 Built with a robust tech stack that includes ReactJS, React Redux, Firebase, JavaScript, HTML, CSS, Tailwind CSS, and the Gemini API, WallE is engineered for performance and reliability. Enjoy a modern, customizable, and responsive chat platform that adapts to your needs and preferences.`,
     githubLink: "https://github.com/WRATH2002/walle",
@@ -271,11 +278,158 @@ JSON Beauty is a powerful and intuitive JSON visualizer designed for developers.
     keyFeatures: `
 Make JSON formatting effortless with JSON Beauty. This lightweight yet powerful tool helps you visualize and validate JSON data with ease. Its sleek UI, collapsible graph structure, and error detection capabilities make it perfect for developers working with structured data.
 
+
 With real-time formatting, syntax highlighting, and seamless dark mode, JSON Beauty ensures an optimized workflow, making JSON handling smoother than ever.`,
     githubLink: "https://github.com/WRATH2002/JSONVisualizer",
     githubRepoName: "JSONVisualizer",
     websiteLink: "https://jsonbeautyio.vercel.app/",
     tags: "reactjs,html,css,javascript,tailwind,monaco-editor,vscode,github",
+  },
+];
+
+export const ProjectsDataTemp1 = [
+  {
+    name: "JSON Beauty",
+    type: "Individual Project",
+    timeline: "Mar 25 - Apr 25",
+    about:
+      "A sleek and powerful JSON visualizer that formats, validates, and highlights your data in real-time—perfect for developers debugging structured data with ease and clarity.",
+    githubLink: "https://github.com/WRATH2002/JSONVisualizer",
+    githubRepoName: "JSONVisualizer",
+    websiteLink: "https://jsonbeautyio.vercel.app/",
+    tags: "reactjs,html,css,javascript,tailwind,monaco-editor,vscode,github",
+  },
+  {
+    name: "CheckYourHealth",
+    type: "Individual Project",
+    timeline: "Feb 24 - Apr 24",
+    about:
+      "A smart IoT-powered wearable that monitors heart rate and detects falls in real-time, paired with a responsive web dashboard for clear, accessible health insights and safety alerts anytime, anywhere.",
+    githubLink: "https://github.com/WRATH2002/Diversion2K24",
+    githubRepoName: "Diversion2K24",
+    websiteLink: "https://checkyourhealth.vercel.app/",
+    tags: "reactjs,html,css,javascript,tailwind,vercel,firebase,arduino,python,vscode,github",
+  },
+  {
+    name: "Splitwise",
+    type: "Individual Project",
+    timeline: "May 24 - Aug 24",
+    about:
+      "A smart expense tracker that simplifies splitting bills with friends, automates transaction logging from images, and gives you powerful insights into your spending with reminders, reports, and visual analytics",
+    githubLink: "https://github.com/WRATH2002/Splitwise",
+    githubRepoName: "Splitwise",
+    websiteLink: "https://splitwiseio.vercel.app/",
+    tags: "reactjs,html,css,javascript,tailwind,vercel,firebase,vscode,github",
+  },
+  {
+    name: "Sudoku Multiplayer",
+    type: "Individual Project",
+    timeline: "Oct 24 - Nov 24",
+    about:
+      "A modern, real-time twist on the classic puzzle game that lets you compete or collaborate with friends using intuitive room-sharing and live chat.",
+    githubLink: "https://github.com/WRATH2002/Sudoku",
+    githubRepoName: "Sudoku",
+    websiteLink: "https://sudokuio.vercel.app/",
+    tags: "reactjs,html,css,javascript,tailwind,firebase,vercel,vscode,github",
+  },
+  {
+    name: "PlayNext",
+    type: "Individual Project",
+    timeline: "Sept 23 - Feb 24",
+    about:
+      "An AI-powered video platform that elevates your viewing experience with real-time YouTube data, dynamic UI, smart search, and intelligent interactions for seamless, personalized content discovery.",
+    githubLink: "https://github.com/WRATH2002/PlayNext",
+    githubRepoName: "PlayNext",
+    websiteLink: "https://playnextio.vercel.app/",
+    tags: "reactjs,redux,html,css,javascript,tailwind,vercel,vscode,github",
+  },
+  {
+    name: "Infinity",
+    type: "Individual Project",
+    timeline: "Nov 23 - May 24",
+    about:
+      "A powerful messaging platform designed for seamless communication, offering features like group chat management, time usage tracking, and media sharing, optimized for both mobile and desktop.",
+    githubLink: "https://github.com/WRATH2002/infinity",
+    githubRepoName: "infinity",
+    websiteLink: "https://infinityio.netlify.app/",
+    tags: "reactjs,redux,html,css,javascript,tailwind,netlify,firebase,vscode,github",
+  },
+  {
+    name: "WallE",
+    type: "Individual Project",
+    timeline: "Oct 23 - Dec 23",
+    about:
+      "An AI-powered chatbot built for smart, real-time conversations with customizable avatars, chat segments, and themes—delivering fast, intuitive responses using Gemini API and a modern tech stack.",
+    githubLink: "https://github.com/WRATH2002/walle",
+    githubRepoName: "walle",
+    websiteLink: "https://walleio.vercel.app/",
+    tags: "reactjs,redux,html,css,javascript,tailwind,vercel,firebase,vscode,github",
+  },
+];
+
+export const ProjectsDataTemp2 = [
+  {
+    ongoing: true,
+    name: "GetWeather",
+    type: "Individual Project",
+    timeline: "Sept 24 - Nov 24",
+    about:
+      "A real-time global weather forecasting website that delivers accurate, location-based weather updates with a fully responsive and customizable interface.",
+    githubLink: "none",
+    githubRepoName: "none",
+    websiteLink: "https://getweatherio.netlify.app/",
+    tags: "reactjs,html,css,javascript,tailwind,vercel,firebase,vscode,github",
+  },
+  {
+    ongoing: true,
+    name: "Mine It",
+    type: "Individual Project",
+    timeline: "Dec 24 - Present",
+    about:
+      "An addictive block-finding game where players uncover hidden diamonds while dodging bombs across varying difficulty levels for a fun, strategic challenge.",
+    githubLink: "none",
+    githubRepoName: "none",
+    websiteLink: "https://mineitio.netlify.app/",
+    tags: "reactjs,html,css,javascript,tailwind,vercel,firebase,vscode,github",
+  },
+  {
+    ongoing: true,
+    name: "Tic Tac Toe",
+    type: "Individual Project",
+    timeline: "Dec 24 - Present",
+    about:
+      "A responsive classic game offering both single and multiplayer modes with a dynamic UI for smooth gameplay on any device.",
+    githubLink: "none",
+    githubRepoName: "none",
+    websiteLink: "https://squidtictactoe.netlify.app/",
+    tags: "reactjs,html,css,javascript,tailwind,vercel,firebase,vscode,github",
+  },
+];
+
+export const ProjectsDataTemp3 = [
+  {
+    ongoing: true,
+    name: "Aurora Note - ( Demo Release Available )",
+    type: "Individual Project",
+    timeline: "Dec 24 - Present",
+    about:
+      "A smart, AI-powered note-taking and task management app that helps you capture ideas, manage to-dos, and stay organized with ease — all in one intelligent workspace.",
+    githubLink: "none",
+    githubRepoName: "none",
+    websiteLink: "https://auroranoteai.vercel.app/",
+    tags: "reactjs,html,css,javascript,tailwind,vercel,firebase,vscode,github",
+  },
+  {
+    ongoing: true,
+    name: "Brainwave - ( Delayed )",
+    type: "Individual Project",
+    timeline: "Sept 24 - Nov 24",
+    about:
+      "A smart all-in-one collaboration platform designed to streamline team communication, organize workflows, and boost productivity with AI-powered features and intuitive design.",
+    githubLink: "none",
+    githubRepoName: "none",
+    websiteLink: "none",
+    tags: "reactjs,html,css,javascript,tailwind,vercel,firebase,vscode,github",
   },
 ];
 
@@ -398,49 +552,190 @@ I believe in the power of design to solve real-world problems and enhance people
 
 Outside of my academic and professional pursuits, I enjoy drawing, watching movies, and occasionally diving into Blender for creative exploration. I’m eager to join a team where I can learn from mentors, collaborate with professionals, and continue to upskill in a dynamic, growth-oriented environment.`;
 
+// export const techName = [
+//   {
+//     name: "ReactJS",
+//     description:
+//       "My preferred library for building dynamic user interfaces and modular frontend components.",
+//   },
+//   {
+//     name: "JavaScript",
+//     description:
+//       "The core scripting language I use for adding interactivity and logic to web applications.",
+//   },
+//   {
+//     name: "HTML",
+//     description:
+//       "The foundation for structuring web content and building semantic, accessible layouts.",
+//   },
+//   {
+//     name: "Tailwind",
+//     description:
+//       "My go-to utility-first CSS framework that helps me style elements efficiently using class names.",
+//   },
+//   {
+//     name: "CSS",
+//     description:
+//       "Used for crafting responsive layouts and visually appealing designs with precision.",
+//   },
+//   {
+//     name: "Redux",
+//     description:
+//       "State management library I use for handling complex state in React applications.",
+//   },
+//   {
+//     name: "C",
+//     description:
+//       "Introduced me to programming fundamentals and problem-solving at a lower level.",
+//   },
+//   {
+//     name: "Java",
+//     description:
+//       "Helped me understand object-oriented programming and backend logic structures.",
+//   },
+//   {
+//     name: "Python",
+//     description:
+//       "A versatile language I’ve used for scripting, automation, and basic data processing tasks.",
+//   },
+//   {
+//     name: "Arduino",
+//     description:
+//       "Used in IoT-based projects to interact with hardware and sensors for real-time applications.",
+//   },
+//   {
+//     name: "Firebase",
+//     description:
+//       "A backend-as-a-service platform I use for authentication, real-time databases, and hosting.",
+//   },
+//   {
+//     name: "MySQL",
+//     description:
+//       "Relational database system used for storing and managing structured data efficiently.",
+//   },
+//   {
+//     name: "Vercel",
+//     description:
+//       "My deployment platform of choice for hosting fast and scalable frontend web applications.",
+//   },
+//   {
+//     name: "Netlify",
+//     description:
+//       "Used for quick deployment and CI/CD of static websites and frontend projects.",
+//   },
+//   {
+//     name: "GitHub",
+//     description:
+//       "Version control platform I use to collaborate, manage repositories, and showcase projects.",
+//   },
+//   {
+//     name: "VSCode",
+//     description:
+//       "My primary code editor, preferred for its rich extensions, integrated terminal, and ease of use.",
+//   },
+// ];
+
 export const techName = [
   {
     name: "ReactJS",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    about:
+      "My preferred library for building dynamic user interfaces and modular frontend components.",
+  },
+  {
+    name: "JavaScript",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    about:
+      "The core scripting language I use for adding interactivity and logic to web applications.",
   },
   {
     name: "HTML",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+    about:
+      "The foundation for structuring web content and building semantic, accessible layouts.",
   },
   {
-    name: "C",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
+    name: "Tailwind",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    about:
+      "My go-to utility-first CSS framework that helps me style elements efficiently using class names.",
   },
   {
     name: "CSS",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+    about:
+      "Used for crafting responsive layouts and visually appealing designs with precision.",
+  },
+  {
+    name: "Redux",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+    about:
+      "State management library I use for handling complex state in React applications.",
+  },
+  {
+    name: "C",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
+    about:
+      "Introduced me to programming fundamentals and problem-solving at a lower level.",
   },
 
   {
     name: "Java",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+    about:
+      "Helped me understand object-oriented programming and backend logic structures.",
   },
-  {
-    name: "Tailwind",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  },
-  {
-    name: "Redux",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
-  },
-  {
-    name: "JavaScript",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-  },
+
   {
     name: "Python",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    about:
+      "A versatile language I’ve used for scripting, automation, and basic data processing tasks.",
   },
   {
     name: "Arduino",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg",
+    about:
+      "Used in IoT-based projects to interact with hardware and sensors for real-time applications.",
+  },
+  {
+    name: "Firebase",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+    about:
+      "A backend-as-a-service platform I use for authentication, storing & retrieving data and real-time databases.",
+  },
+  {
+    name: "MySQL",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+    about:
+      "Relational database system used for storing and managing structured data efficiently.",
+  },
+  {
+    name: "Vercel",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+    about:
+      "My deployment platform of choice for hosting fast and scalable frontend web applications.",
+  },
+  {
+    name: "Netlify",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg",
+    about:
+      "Used for quick deployment and CI/CD of static websites and frontend projects.",
+  },
+  {
+    name: "GitHub",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    about:
+      "Version control platform I use to collaborate, manage repositories, and showcase projects.",
+  },
+  {
+    name: "VSCode",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+    about:
+      "My primary code editor, preferred for its rich extensions, integrated terminal, and ease of use.",
   },
 ];
+
 export const techName2 = [
   {
     name: "Firebase",
@@ -460,10 +755,10 @@ export const techName3 = [
     name: "Netlify",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg",
   },
-  {
-    name: "AWS",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-  },
+  // {
+  //   name: "AWS",
+  //   link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+  // },
   {
     name: "GitHub",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",

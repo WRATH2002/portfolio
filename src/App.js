@@ -78,7 +78,7 @@ function App() {
             <>
               <div
                 className={
-                  " font-[geist] text-[15px] ml-[-90px]" +
+                  " font-[DMSr] text-[15px] ml-[-125px]" +
                   (anime
                     ? " mb-[-30px] h-[20px] opacity-100"
                     : " mb-[-20px] h-0 opacity-0")
@@ -90,11 +90,11 @@ function App() {
               >
                 welcome to my
               </div>
-              <div className="font-[sky2] text-[25px] font-semibold ">
+              <div className="  uppercase ">
                 <svg
                   height="100"
                   stroke="#000000"
-                  stroke-width="2.6"
+                  stroke-width="4"
                   class="text-line"
                   width="100%"
                 >

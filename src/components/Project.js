@@ -30,7 +30,7 @@ import css from "../assets/img/css.png";
 import python from "../assets/img/python.png";
 import firebase from "../assets/img/firebase.png";
 import ExtraProjects from "./ExtraProjects";
-import { OctagonAlert } from "lucide-react";
+import { MoveLeft, MoveRight, OctagonAlert } from "lucide-react";
 
 const arr = [
   brainwaveLogo,
@@ -94,7 +94,7 @@ const Project = (props) => {
       ) : (
         <></>
       )} */}
-      <div className="w-full md:w-[calc(100%-70px)] lg:w-[calc(100%-70px)] flex flex-col justify-start items-center h-full font-[geist] text-[#404040] text-[15px]">
+      <div className="w-full md:w-[calc(100%-70px)] lg:w-[calc(100%-70px)] flex flex-col justify-start items-center h-full font-[DMSr] text-[#313131] text-[15px]">
         <div className="h-[100svh] w-[350px] bg-white left-[60px] top-0 fixed z-50 hidden md:flex lg:flex flex-col justify-start items-start p-[15px] border-r border-[#ededed] overflow-y-scroll">
           <div
             className={
@@ -109,18 +109,18 @@ const Project = (props) => {
             <div className="mt-[30px] mb-[10px] pl-[15px] text-[#6161619e]">
               Now viewing
             </div>
-            <div className="w-full flex flex-col justify-center items-start bg-[#f5f5f5] rounded-2xl p-[15px] py-[12px] h-auto">
+            <div className="w-full flex flex-col justify-center items-start font-[DMSr] bg-[#f5f5f5] rounded-2xl p-[15px] py-[12px] h-auto">
               {indexPro == -1 ? (
                 <>
-                  <span className="text-black">Extra Projects</span>
-                  <span className="overflow-hidden text-ellipsis line-clamp-2 w-full text-[#707070] ">
+                  <span className="text-black font-[DMSm]">Extra Projects</span>
+                  <span className="overflow-hidden text-ellipsis line-clamp-1 w-full text-[#707070] mt-[5px] ">
                     These are some small projects built to make my foundation
                     stronger.
                   </span>
                 </>
               ) : (
                 <>
-                  <span className="text-black flex justify-start items-center">
+                  <span className="text-black font-[DMSm] flex justify-start items-center">
                     {ProjectsData[indexPro]?.name}
                     {ProjectsData[indexPro]?.ongoing ? (
                       <>
@@ -135,7 +135,7 @@ const Project = (props) => {
                       <></>
                     )}
                   </span>
-                  <span className="overflow-hidden text-ellipsis line-clamp-2 w-full text-[#707070] ">
+                  <span className="overflow-hidden text-ellipsis line-clamp-1 mt-[5px] w-full text-[#707070] ">
                     {ProjectsData[indexPro]?.keyFeatures}
                   </span>
                 </>
@@ -156,7 +156,7 @@ const Project = (props) => {
                       }}
                       // style={{ transition: ".3s" }}
                     >
-                      <span className="text-black flex justify-start items-center">
+                      <span className="text-black font-[DMSm] flex justify-start items-center">
                         {ProjectsData[index]?.name}
                         {ProjectsData[index]?.ongoing ? (
                           <>
@@ -171,7 +171,7 @@ const Project = (props) => {
                           <></>
                         )}
                       </span>
-                      <span className="overflow-hidden  text-ellipsis line-clamp-2 w-full text-[#707070] ">
+                      <span className="overflow-hidden  text-ellipsis line-clamp-1 mt-[2px] w-full text-[#707070] ">
                         {ProjectsData[index]?.keyFeatures}
                       </span>
                     </div>
@@ -399,12 +399,65 @@ const Project = (props) => {
         <div className="w-full min-h-[40px] flex md:hidden lg:hidden"></div>
         {extra ? (
           <>
-            <ExtraProjects />
+            <div
+              className="w-full h-[calc(100%-40px)] md:h-full lg:h-full pt-[20px] md:pt-[50px] lg:pt-[50px] flex flex-col justify-start items-start overflow-y-scroll text-[#313131] px-[20px] md:px-[0px] lg:px-[0px]"
+              ref={contentRef}
+              onScroll={handleScroll}
+            >
+              <div
+                className={
+                  "text-[35px] font-[DMSr] tracking-tight leading-[45px] ml-[0px]  mb-[30px] text-[black] " +
+                  (anime ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
+                }
+                style={{
+                  transition: anime ? ".4s" : "none",
+                  transitionDelay: anime ? ".3s" : "0s",
+                }}
+              >
+                Here are few additional projects that reflect my curiosity,
+                hands-on learning, and growing interest in software development.
+              </div>
+              <div className=" mb-[140px] w-full text-[19px] font-[DMSr] tracking-tight leading-[29px] text-[#5b5b5b]">
+                These were some of my very first projects, built with the goal
+                of gaining foundational knowledge and practical experience
+                through real implementation.
+              </div>
+              <div className="w-full text-[12px] justify-start text-[#525252] font-[jetm] tracking-wider uppercase flex">
+                Extra Projects
+              </div>
+              <div className="w-full mt-[30px] text-[18px] font-[DMSm] leading-[25px] ">
+                Mineit
+              </div>
+              <div className="w-full mt-[6px] leading-[25px]">
+                Mine It – a thrilling block-finding game where players must
+                uncover diamond blocks while avoiding hidden bombs. Test your
+                skills across easy, medium, and hard difficulty levels.
+              </div>
+              <div className="w-full text-[18px] font-[DMSm] leading-[25px] mt-[30px] ">
+                Getweather
+              </div>
+              <div className="w-full mt-[6px] leading-[25px]">
+                GetWeather – a global weather forecasting website providing
+                real-time weather details with a configurable UI. Access
+                accurate weather data anywhere in the world on a responsive
+                platform.
+              </div>
+              <div className="w-full text-[18px] font-[DMSm] leading-[25px] mt-[30px] ">
+                Tic Tac Toe
+              </div>
+              <div className="w-full mt-[6px] leading-[25px] mb-[200px]">
+                Tic Tac Toe - a classic Tic Tac Toe game, built for seamless
+                play on any device. Enjoy strategic gameplay with a responsive
+                design for both smartphones and PCs.
+              </div>
+            </div>
+
+            {/* <ExtraProjects /> */}
           </>
         ) : (
           <>
             <div
-              className="w-full h-[calc(100%-40px)] md:h-full lg:h-full pt-[20px] md:pt-[50px] lg:pt-[50px] flex flex-col justify-start items-start overflow-y-scroll"
+              className="w-full h-[calc(100%-40px)] md:h-full lg:h-full pt-[20px] md:pt-[50px] lg:pt-[50px] flex flex-col justify-start items-start overflow-y-scroll text-[#313131] px-[20px] md:px-[0px] lg:px-[0px]"
               ref={contentRef}
               onScroll={handleScroll}
             >
@@ -412,7 +465,7 @@ const Project = (props) => {
                 <>
                   <div
                     className={
-                      "min-h-[30px] px-[10px]  ml-[5px] mb-[-35px] z-10 flex justify-center items-center border-[1.5px] border-[#ffffff3e] bg-[#ffffffbf] text-[black] rounded-lg " +
+                      "min-h-[30px] px-[10px]  ml-[5px] mb-[-35px] z-10 flex justify-center items-center border-[1.5px] border-[#ffffff3e] bg-[#ffffffbf] text-[black] rounded-lg font-[DMSr] " +
                       (anime ? " mt-[5px] opacity-100" : " mt-[15px] opacity-0")
                     }
                     style={{
@@ -451,7 +504,7 @@ const Project = (props) => {
         </div> */}
               <div
                 className={
-                  "w-full flex flex-col justify-start items-start" +
+                  "w-full flex flex-col justify-start items-start text-[#313131] text-[15px] font-[DMSr] " +
                   (anime ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
                 }
                 style={{
@@ -459,11 +512,11 @@ const Project = (props) => {
                   transitionDelay: anime ? ".4s" : "0s",
                 }}
               >
-                <div className="text-[black] text-[26px] mt-[27px]">
+                <div className="text-[black] text-[26px] mt-[27px] font-[DMSm]">
                   {ProjectsData[indexPro].name}
                 </div>
 
-                <div className="flex justify-start items-start">
+                <div className="flex justify-start items-start font-[DMSr]">
                   {ProjectsData[indexPro]?.ongoing ? (
                     <div
                       className="px-[11px] h-[30px] text-[14px] rounded-lg mt-[5px] text-[#6161619e] border  border-[#e4e3e3] flex justify-center items-center cursor-not-allowed"
@@ -587,7 +640,7 @@ const Project = (props) => {
                   </div>
                 </div>
 
-                <div className="w-full flex justify-start items-start mt-[7px]">
+                <div className="w-full flex justify-start items-start mt-[7px] ">
                   <div className="w-[100px] flex justify-start text-[#6161619e]">
                     Tech Stack
                   </div>
@@ -596,31 +649,33 @@ const Project = (props) => {
                   </div>
                 </div>
 
-                <pre className="w-full mt-[30px] mb-[21px] flex-wrap font-[geist] whitespace-pre-wrap">
+                <pre className="w-full mt-[30px] mb-[30px] flex-wrap text-[15px] leading-[25px] font-[DMSr] whitespace-pre-wrap">
                   {ProjectsData[indexPro].about}
                 </pre>
-                <span className="mb-[7px] ">Key Features : </span>
+                <span className="mb-[7px] mt-[30px] leading-[25px] font-[DMSm] text-[black]">
+                  Key Features :{" "}
+                </span>
                 {ProjectsData[indexPro].points?.map((data, index) => {
                   return (
                     <div
-                      className="flex justify-start items-start leading-[22px]"
+                      className="flex justify-start items-start leading-[25px] font-[DMSr]"
                       key={index}
                     >
-                      <span className="text-[23px] mr-[15px]">•</span>
+                      <span className="text-[20px] mr-[15px]">•</span>
                       {data}
                     </div>
                   );
                 })}
-                <pre className="w-full mt-[0px] flex-wrap font-[geist] whitespace-pre-wrap">
+                <pre className="w-full mt-[30px] flex-wrap leading-[25px] font-[DMSr] whitespace-pre-wrap">
                   {ProjectsData[indexPro].keyFeatures}
                 </pre>
 
-                <div className="w-full h-[42px] mt-[20px] flex justify-end items-center">
+                <div className="w-full h-[40px] mt-[80px] flex justify-end items-center">
                   {indexPro == 0 ? (
                     <></>
                   ) : (
                     <div
-                      className="px-[15px] h-full flex justify-center items-center ml-[15px] border border-[#ededed] rounded-xl cursor-pointer"
+                      className="px-[15px] h-full flex justify-center items-center ml-[15px] bg-[black] rounded-[20px] cursor-pointer font-[DMSr] text-[#ffffff]"
                       onClick={() => {
                         if (indexPro != 0) {
                           setAnime(false);
@@ -630,17 +685,23 @@ const Project = (props) => {
                         console.log(indexPro);
                       }}
                     >
-                      Prev{" "}
-                      <div className="ml-[6px] border-l border-[#ededed] pl-[6px] text-[#6161619e]">
+                      <MoveLeft
+                        width={16}
+                        height={16}
+                        strokeWidth={2.2}
+                        className="mr-[10px]"
+                      />{" "}
+                      Prev
+                      {/* <div className="ml-[6px] font-[DMSr] border-l border-[#ededed] pl-[6px] text-[#6161619e]">
                         {ProjectsData[indexPro - 1]?.name}
-                      </div>
+                      </div> */}
                     </div>
                   )}
                   {indexPro == ProjectsData.length - 1 ? (
                     <></>
                   ) : (
                     <div
-                      className="px-[15px] h-full flex justify-center items-center ml-[15px] border border-[#ededed] rounded-xl cursor-pointer"
+                      className="px-[15px] h-full flex justify-center items-center ml-[15px] bg-[black] rounded-[20px] cursor-pointer font-[DMSr] text-[#ffffff]"
                       onClick={() => {
                         if (indexPro != ProjectsData.length - 1) {
                           setAnime(false);
@@ -651,9 +712,15 @@ const Project = (props) => {
                       }}
                     >
                       Next{" "}
-                      <div className="ml-[6px] border-l border-[#ededed] pl-[6px] text-[#6161619e]">
+                      <MoveRight
+                        width={16}
+                        height={16}
+                        strokeWidth={2.2}
+                        className="ml-[10px]"
+                      />
+                      {/* <div className="ml-[6px] font-[DMSr] border-l border-[#ededed] pl-[6px] text-[#6161619e]">
                         {ProjectsData[indexPro + 1]?.name}
-                      </div>
+                      </div> */}
                     </div>
                   )}
                 </div>
