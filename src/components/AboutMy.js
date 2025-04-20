@@ -121,7 +121,7 @@ const AboutMy = (props) => {
             transitionDelay: anime ? ".4s" : "0s",
           }}
         >
-          <div className="w-full text-[12px] justify-start text-[#525252] font-[jetm] tracking-wider uppercase flex">
+          <div className="w-full text-[12px] justify-start text-[#777777] font-[jetm] tracking-wider uppercase flex">
             My story
           </div>
           <pre className="w-full ml-[0px] whitespace-pre-wrap font-[DMSr] text-[#313131] leading-[25px] mt-[30px]">
@@ -149,7 +149,7 @@ Outside of my academic and professional pursuits, I enjoy drawing, watching movi
             transitionDelay: anime ? ".5s" : "0s",
           }}
         >
-          <div className="w-full text-[12px] justify-start text-[#525252] font-[jetm] tracking-wider uppercase flex">
+          <div className="w-full text-[12px] justify-start text-[#777777] font-[jetm] tracking-wider uppercase flex">
             Education
           </div>
           <pre className="w-full mt-[30px] ml-[0px] flex flex-col justify-start items-start whitespace-pre-wrap font-[DMSm] text-[#313131]">
@@ -194,7 +194,7 @@ Secondary Education (WBBSE) from Jadavpur Vidyapith.`}
             transitionDelay: anime ? ".6s" : "0s",
           }}
         >
-          <div className="w-full text-[12px] justify-start text-[#525252] font-[jetm] tracking-wider uppercase flex">
+          <div className="w-full text-[12px] justify-start text-[#777777] font-[jetm] tracking-wider uppercase flex">
             Internship
           </div>
           <pre className="mt-[30px] w-full ml-[0px] flex flex-col justify-start items-start whitespace-pre-wrap font-[DMSr] text-[#313131] ">
@@ -252,7 +252,7 @@ I completed a Web Development certification program with`}{" "}
             transitionDelay: anime ? ".7s" : "0s",
           }}
         >
-          <div className="w-full text-[12px] justify-start text-[#525252] font-[jetm] tracking-wider uppercase flex">
+          <div className="w-full text-[12px] justify-start text-[#777777] font-[jetm] tracking-wider uppercase flex">
             Award
           </div>
           <pre className="mt-[30px] w-full ml-[0px] flex flex-col justify-start items-start whitespace-pre-wrap font-[geist] text-[#313131] mb-[200px]">
@@ -279,7 +279,7 @@ In 2023, I achieved a `}
               </pre>
             </div>
           </pre>
-          <div className="w-full text-[12px] justify-start text-[#525252] font-[jetm] tracking-wider uppercase flex ">
+          <div className="w-full text-[12px] justify-start text-[#777777] font-[jetm] tracking-wider uppercase flex ">
             Resources I Use
           </div>
           <div className="mt-[30px] w-full ml-[0px] flex flex-col justify-start items-start whitespace-pre-wrap font-[geist] text-[#313131] ">
@@ -326,10 +326,10 @@ In 2023, I achieved a `}
             </div>
           </div>
         </div>
-        <div className="w-full text-[12px] justify-start text-[#525252] font-[jetm] tracking-wider uppercase flex">
+        <div className="w-full text-[12px] justify-start text-[#777777] font-[jetm] tracking-wider uppercase flex">
           Let's Connect
         </div>
-        <div className="w-full flex flex-col justify-start items-start  font-[DMSr]  ml-[0px]  mb-[80px] mt-[30px] text-[#313131] ">
+        <div className="w-full flex flex-col justify-start items-start  font-[DMSr]  ml-[0px]  mb-[200px] mt-[30px] text-[#313131] ">
           <span className="text-[35px] tracking-tight leading-[45px] text-[black]">
             Feel free to reach out to explore opportunities, discuss freelance
             projects or just say hello.
@@ -409,7 +409,7 @@ In 2023, I achieved a `}
             </a>
           </div>
         </div>
-        <div className="mb-[60px]"></div>
+        {/* <div className="mb-[60px]"></div> */}
         {/* <pre className="whitespace-pre-wrap font-[geist] ">{aboutData}</pre> */}
       </div>
     </>

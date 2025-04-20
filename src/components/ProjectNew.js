@@ -512,7 +512,7 @@ const ProjectNew = (props) => {
         </div>
         <div
           className={
-            "w-full text-[12px] justify-start text-[#525252] font-[jetm] tracking-wider uppercase flex mb-[30px]" +
+            "w-full text-[12px] justify-start text-[#777777] font-[jetm] tracking-wider uppercase flex mb-[30px]" +
             (anime2 ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
           }
           style={{
@@ -551,7 +551,8 @@ const ProjectNew = (props) => {
         </div>
         <div
           className={
-            "" + (anime2 ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
+            "mb-[200px]" +
+            (anime2 ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
           }
           style={{
             transition: anime2 ? ".4s" : "none",
@@ -569,7 +570,9 @@ const ProjectNew = (props) => {
                       key={index}
                       className="w-full flex flex-col justify-start items-start font-[DMSm] mb-[80px] text-[18px] text-[#7b7b7b] cursor-pointer"
                     >
-                      <span>{data?.name}</span>
+                      <span className="text-[18px] font-[DMSm] text-black">
+                        {data?.name}
+                      </span>
                       <div className="mt-[20px] w-full">
                         <img
                           className="w-full aspect-video rounded-xl object-fill border-[1.5px] border-[#e6e6e6]"
@@ -577,7 +580,7 @@ const ProjectNew = (props) => {
                         ></img>
                       </div>
                       <div className="w-full h-[100px] bg-gradient-to-b from-transparent to-[white] to-[80%] mt-[-100px]"></div>
-                      <div className=" mb-[40px] w-full text-[18px] font-[DMSr] mt-[30px] tracking-tight leading-[29px] text-[#000000]">
+                      <div className=" mb-[40px] w-full text-[18px] font-[DMSr] mt-[0px] tracking-tight leading-[29px] text-[#000000]">
                         {data?.about}
                       </div>
                     </a>
@@ -596,7 +599,9 @@ const ProjectNew = (props) => {
                       key={index}
                       className="w-full flex flex-col justify-start items-start font-[DMSm] mb-[80px] text-[18px] text-[#7b7b7b] cursor-pointer"
                     >
-                      <span>{data?.name}</span>
+                      <span className="text-[18px] font-[DMSm] text-black">
+                        {data?.name}
+                      </span>
                       <div className="mt-[20px] w-full">
                         <img
                           className="w-full aspect-video rounded-xl object-fill border-[1.5px] border-[#e6e6e6]"
@@ -604,7 +609,7 @@ const ProjectNew = (props) => {
                         ></img>
                       </div>
                       <div className="w-full h-[100px] bg-gradient-to-b from-transparent to-[white] to-[80%] mt-[-100px]"></div>
-                      <div className=" mb-[40px] w-full text-[18px] font-[DMSr] mt-[30px] tracking-tight leading-[29px] text-[#000000]">
+                      <div className=" mb-[40px] w-full text-[18px] font-[DMSr] mt-[0px] tracking-tight leading-[29px] text-[#000000]">
                         {data?.about}
                       </div>
                     </a>
@@ -623,7 +628,9 @@ const ProjectNew = (props) => {
                       key={index}
                       className="w-full flex flex-col justify-start items-start font-[DMSm] mb-[80px] text-[18px] text-[#7b7b7b] cursor-pointer"
                     >
-                      <span>{data?.name}</span>
+                      <span className="text-[18px] font-[DMSm] text-black">
+                        {data?.name}
+                      </span>
                       <div className="mt-[20px] w-full">
                         <img
                           className="w-full aspect-video rounded-xl object-fill border-[1.5px] border-[#e6e6e6]"
@@ -631,7 +638,7 @@ const ProjectNew = (props) => {
                         ></img>
                       </div>
                       <div className="w-full h-[100px] bg-gradient-to-b from-transparent to-[white] to-[80%] mt-[-100px]"></div>
-                      <div className=" mb-[40px] w-full text-[18px] font-[DMSr] mt-[30px] tracking-tight leading-[29px] text-[#000000]">
+                      <div className=" mb-[40px] w-full text-[18px] font-[DMSr] mt-[0px] tracking-tight leading-[29px] text-[#000000]">
                         {data?.about}
                       </div>
                     </a>

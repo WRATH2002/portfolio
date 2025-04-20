@@ -337,7 +337,7 @@ const Tech = () => {
           </div>
           <div
             className={
-              "w-full text-[12px] justify-start text-[#525252] font-[jetm] tracking-wider uppercase flex mb-[40px]" +
+              "w-full text-[12px] justify-start text-[#777777] font-[jetm] tracking-wider uppercase flex mb-[40px]" +
               (anime ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
             }
             style={{
@@ -371,7 +371,7 @@ const Tech = () => {
                       ></img>
                     </div>
                     <div className="ml-[20px] w-[calc(100%-80px)] flex flex-col justify-start items-start">
-                      <span className="font-[DMSm] text-[black]">
+                      <span className="text-[18px] font-[DMSm] text-[black]">
                         {data?.name}
                       </span>
                       <span className="font-[DMSr] leading-[25px] mt-[5px]">

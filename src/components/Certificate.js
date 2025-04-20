@@ -7,6 +7,7 @@ import i5 from "../assets/img/55.jpg";
 import i6 from "../assets/img/66.jpg";
 import i7 from "../assets/img/77.jpg";
 import { Certificates } from "./Constant";
+import user from "../assets/img/a4.jpg";
 
 const arr = [i1, i2, i3, i4, i5, i6, i7];
 
@@ -52,429 +53,154 @@ const Certificate = (props) => {
   }, [expand]);
   return (
     <>
-      <div className="w-full md:w-[calc(100%-70px)] lg:w-[calc(100%-70px)] flex flex-col justify-start items-center h-full font-[geist] text-[#404040] text-[15px]">
-        <div className="h-[100svh] w-[350px] bg-white left-[60px] top-0 fixed z-50 hidden md:flex lg:flex flex-col justify-start items-start p-[15px] border-r border-[#ededed]">
-          <div
-            className={
-              "w-full h-auto flex-col justify-start items-start" +
-              (anime ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
-            }
-            style={{
-              transition: anime ? ".4s" : "none",
-              transitionDelay: anime ? ".2s" : "0s",
-            }}
-          >
-            <div className="mt-[30px] mb-[10px] pl-[15px] text-[#6161619e]">
-              Coursera
-            </div>
-            {Certificates?.map((data, index) => {
-              return (
-                <>
-                  {index < 4 ? (
-                    <div
-                      className={
-                        "w-full flex flex-col justify-center items-start hover:bg-[#f5f5f5] mb-[8px] rounded-2xl p-[15px] py-[12px] h-auto cursor-pointer" +
-                        (index == indexPro
-                          ? " bg-[#f5f5f5]"
-                          : " bg-transparent")
-                      }
-                      style={{ transition: ".3s" }}
-                      onClick={() => {
-                        setIndexPro(index);
-                        setExpand(false);
-                      }}
-                    >
-                      <span className="text-black">
-                        {Certificates[index]?.name}
-                      </span>
-                      <span className="overflow-hidden text-ellipsis line-clamp-2 w-full text-[#707070] text-[13px]">
-                        {Certificates[index]?.date}
-                      </span>
-                    </div>
-                  ) : (
-                    <></>
-                  )}
-                </>
-              );
-            })}
-            <div className="mt-[30px] mb-[10px] pl-[15px] text-[#6161619e]">
-              Udmey
-            </div>
-            {Certificates?.map((data, index) => {
-              return (
-                <>
-                  {index > 3 && index < 6 ? (
-                    <div
-                      className={
-                        "w-full flex flex-col justify-center items-start hover:bg-[#f5f5f5] mb-[8px] rounded-2xl p-[15px] py-[12px] h-auto cursor-pointer" +
-                        (index == indexPro
-                          ? " bg-[#f5f5f5]"
-                          : " bg-transparent")
-                      }
-                      style={{ transition: ".3s" }}
-                      onClick={() => {
-                        setIndexPro(index);
-                        setExpand(false);
-                      }}
-                    >
-                      <span className="text-black">
-                        {Certificates[index]?.name}
-                      </span>
-                      <span className="overflow-hidden text-ellipsis line-clamp-2 w-full text-[#707070] text-[13px]">
-                        {Certificates[index]?.date}
-                      </span>
-                    </div>
-                  ) : (
-                    <></>
-                  )}
-                </>
-              );
-            })}
-            <div className="mt-[30px] mb-[10px] pl-[15px] text-[#6161619e]">
-              Hackathon
-            </div>
-            <div
-              className={
-                "w-full flex flex-col justify-center items-start hover:bg-[#f5f5f5] mb-[8px] rounded-2xl p-[15px] py-[12px] h-auto cursor-pointer" +
-                (indexPro == 6 ? " bg-[#f5f5f5]" : " bg-transparent")
-              }
-              style={{ transition: ".3s" }}
-              onClick={() => {
-                setIndexPro(6);
-                setExpand(false);
-              }}
-            >
-              <span className="text-black">{Certificates[6]?.name}</span>
-              <span className="overflow-hidden text-ellipsis line-clamp-2 w-full text-[#707070] text-[13px]">
-                {Certificates[6]?.date}
-              </span>
-            </div>
-          </div>
-        </div>
+      <div className="w-full md:w-[calc(100%-100px)] lg:w-[calc(100%-100px)] h-[100svh] overflow-y-scroll overflow-x-visible flex flex-col justify-start items-start text-[15px] pt-[20px] md:pt-[60px] lg:pt-[60px] text-[#313131] px-[20px]">
         <div
           className={
-            "w-full h-[100svh] top-0 left-0 bg-[#eeeeee96] z-40 fixed backdrop-blur-sm" +
-            (expand ? " flex" : " hidden")
+            "w-full flex justify-start items-center mb-[50px]" +
+            (anime ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
           }
-        ></div>
-        <div
-          className={
-            "h-[100svh] w-[350px] bg-white left-0 top-0 fixed z-50 flex flex-col justify-start items-end p-[15px] " +
-            (expand ? " ml-[0px]" : " ml-[-400px]")
-          }
-          style={{ transition: ".3s" }}
+          style={{
+            transition: anime ? ".4s" : "none",
+            transitionDelay: anime ? ".2s" : "0s",
+          }}
         >
-          <div
-            className="z-50"
-            onClick={() => {
-              setExpand(false);
-              setAnime2(false);
-            }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-x"
-            >
-              <path d="M18 6 6 18" />
-              <path d="m6 6 12 12" />
-            </svg>
-          </div>
-          <div
-            className={
-              "w-full h-auto flex-col justify-start items-start " +
-              (anime2 ? " mt-[-30px] opacity-100" : " mt-[-20px] opacity-0")
-            }
-            style={{
-              transition: anime2 ? ".4s" : "none",
-              transitionDelay: anime2 ? ".2s" : "0s",
-            }}
-          >
-            <div className="mt-[40px] mb-[10px] pl-[15px] text-[#6161619e]">
-              Coursera
-            </div>
-            {Certificates?.map((data, index) => {
-              return (
-                <>
-                  {index < 4 ? (
-                    <div
-                      className={
-                        "w-full flex flex-col justify-center items-start hover:bg-[#f5f5f5] mb-[8px] rounded-2xl p-[15px] py-[12px] h-auto cursor-pointer" +
-                        (index == indexPro
-                          ? " bg-[#f5f5f5]"
-                          : " bg-transparent")
-                      }
-                      style={{ transition: ".3s" }}
-                      onClick={() => {
-                        setIndexPro(index);
-                        setExpand(false);
-                      }}
-                    >
-                      <span className="text-black">
-                        {Certificates[index]?.name}
-                      </span>
-                      <span className="overflow-hidden text-ellipsis line-clamp-2 w-full text-[#707070] text-[13px]">
-                        {Certificates[index]?.date}
-                      </span>
-                    </div>
-                  ) : (
-                    <></>
-                  )}
-                </>
-              );
-            })}
-
-            <div className="mt-[30px] mb-[10px] pl-[15px] text-[#6161619e]">
-              Udemy
-            </div>
-            {Certificates?.map((data, index) => {
-              return (
-                <>
-                  {index > 3 && index < 6 ? (
-                    <div
-                      className={
-                        "w-full flex flex-col justify-center items-start hover:bg-[#f5f5f5] mb-[8px] rounded-2xl p-[15px] py-[12px] h-auto cursor-pointer" +
-                        (index == indexPro
-                          ? " bg-[#f5f5f5]"
-                          : " bg-transparent")
-                      }
-                      style={{ transition: ".3s" }}
-                      onClick={() => {
-                        setIndexPro(index);
-                        setExpand(false);
-                      }}
-                    >
-                      <span className="text-black">
-                        {Certificates[index]?.name}
-                      </span>
-                      <span className="overflow-hidden text-ellipsis line-clamp-2 w-full text-[#707070] text-[13px]">
-                        {Certificates[index]?.date}
-                      </span>
-                    </div>
-                  ) : (
-                    <></>
-                  )}
-                </>
-              );
-            })}
-            <div className="mt-[30px] mb-[10px] pl-[15px] text-[#6161619e]">
-              Hackathon
-            </div>
-
-            <div
-              className={
-                "w-full flex flex-col justify-center items-start hover:bg-[#f5f5f5] mb-[8px] rounded-2xl p-[15px] py-[12px] h-auto cursor-pointer" +
-                (indexPro == 6 ? " bg-[#f5f5f5]" : " bg-transparent")
-              }
-              style={{ transition: ".3s" }}
-              onClick={() => {
-                setIndexPro(6);
-                setExpand(false);
-              }}
-            >
-              <span className="text-black">{Certificates[6]?.name}</span>
-              <span className="overflow-hidden text-ellipsis line-clamp-2 w-full text-[#707070] text-[13px]">
-                {Certificates[6]?.date}
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="w-full h-[60px] px-[20px] flex md:hidden lg:hidden justify-between items-center fixed top-0 left-0 border border-[#ededed] bg-gradient-to-t from-[#ffffffce] to-[#ffffff] backdrop-blur-2xl ">
-          <div>Certificates</div>
-          <div
-            className="-rotate-90"
-            onClick={() => {
-              setExpand(true);
-            }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-chart-no-axes-column"
-            >
-              <line x1="18" x2="18" y1="20" y2="10" />
-              <line x1="12" x2="12" y1="20" y2="4" />
-              <line x1="6" x2="6" y1="20" y2="14" />
-            </svg>
-          </div>
-        </div>
-        <div className="w-full min-h-[40px] flex md:hidden lg:hidden"></div>
-        <div
-          className="w-full h-[calc(100%-40px)] md:h-full lg:h-full pt-[20px] md:pt-[50px] lg:pt-[50px] flex flex-col justify-start items-start overflow-y-scroll"
-          ref={contentRef}
-          onScroll={handleScroll}
-        >
-          <div
-            className={
-              "w-full h-auto p-[10px] bg-[#F5F5F5] flex justify-center items-center rounded-[14px] border " +
-              (anime ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
-            }
-            style={{
-              transition: anime ? ".4s" : "none",
-              transitionDelay: anime ? ".2s" : "0s",
-            }}
-          >
+          <div className="w-[40px] h-[40px] rounded-full overflow-hidden">
             <img
-              src={arr[indexPro]}
-              // src="https://drive.google.com/drive/u/4/folders/18WIKc9rYMs8J8L8jQpNQsHiW6x7Rbr9J"
-              className="w-full h-auto rounded-xl object-cover"
+              className="w-[40px] h-[40px] rounded-full  object-cover transform scale-110"
+              src={user}
             ></img>
           </div>
-          <div
-            className={
-              "w-full flex flex-col justify-start items-start" +
-              (anime ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
-            }
-            style={{
-              transition: anime ? ".4s" : "none",
-              transitionDelay: anime ? ".4s" : "0s",
-            }}
-          >
-            <div className="text-[black] text-[26px] mt-[27px] ">
-              {Certificates[indexPro].name}
-            </div>
-
-            <div className="flex justify-start items-start">
-              <a
-                className="px-[11px] h-[30px] text-[14px] rounded-lg mt-[5px] text-[#6161619e] border  border-[#e4e3e3] flex justify-center items-center"
-                href={Certificates[indexPro]?.link}
-                target="_blank"
-              >
-                <div className="mr-[7px]">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-link-2"
-                  >
-                    <path d="M9 17H7A5 5 0 0 1 7 7h2" />
-                    <path d="M15 7h2a5 5 0 1 1 0 10h-2" />
-                    <line x1="8" x2="16" y1="12" y2="12" />
-                  </svg>
-                </div>
-                Drive Link
-              </a>
-            </div>
-            <div className="w-full flex justify-start items-start mt-[25px]">
-              <div className="w-[100px] flex justify-start text-[#6161619e]">
-                Timeline
-              </div>
-              <div className="w-[calc(100%-100px)] flex justify-start flex-wrap">
-                {Certificates[indexPro].date}
-              </div>
-            </div>
-            {Certificates[indexPro]?.platform?.length != 0 ? (
-              <div className="w-full flex justify-start items-start mt-[7px]">
-                <div className="w-[100px] flex justify-start text-[#6161619e]">
-                  Platform
-                </div>
-                <div className="w-[calc(100%-100px)] flex justify-start flex-wrap">
-                  {Certificates[indexPro]?.platform}
-                </div>
-              </div>
-            ) : (
-              <></>
-            )}
-            {Certificates[indexPro]?.type?.length != 0 ? (
-              <div className="w-full flex justify-start items-start mt-[7px]">
-                <div className="w-[100px] flex justify-start text-[#6161619e]">
-                  Type
-                </div>
-                <div className="w-[calc(100%-100px)] flex justify-start flex-wrap">
-                  {Certificates[indexPro]?.type}
-                </div>
-              </div>
-            ) : (
-              <></>
-            )}
-
-            {/* <pre className="w-full mt-[30px] mb-[21px] flex-wrap font-[geist] whitespace-pre-wrap">
-              {Certificates[indexPro].about}
-            </pre>
-            <span className="mb-[7px] ">Key Features : </span>
-            {Certificates[indexPro].points?.map((data, index) => {
-              return (
-                <div
-                  className="flex justify-start items-start leading-[22px]"
-                  key={index}
+          <div className="ml-[20px] flex flex-col justify-center items-start text-[15px]">
+            <div className="font-[DMSm] text-[#000000]">Himadri Purkait</div>
+            {/* <div className="font-[DMSr]">Software Developer</div> */}
+            <div className="font-[DMSr] flex justify-start items-center">
+              <div className=" mr-[5px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-map-pin"
                 >
-                  <span className="text-[23px] mr-[15px]">•</span>
-                  {data}
-                </div>
-              );
-            })}
-            <pre className="w-full mt-[0px] flex-wrap font-[geist] whitespace-pre-wrap">
-              {Certificates[indexPro].keyFeatures}
-            </pre> */}
-
-            <div className="w-full h-[42px] mt-[50px] flex justify-end items-center">
-              {indexPro == 0 ? (
-                <></>
-              ) : (
-                <div
-                  className="px-[15px] h-full flex justify-center items-center ml-[15px] border border-[#ededed] rounded-xl cursor-pointer"
-                  onClick={() => {
-                    if (indexPro != 0) {
-                      setAnime(false);
-                      scrollToTop();
-                      setIndexPro(indexPro - 1);
-                    }
-                    console.log(indexPro);
-                  }}
-                >
-                  Prev{" "}
-                  {/* <div className="ml-[6px] border-l border-[#ededed] pl-[6px] text-[#6161619e] whitespace-nowrap overflow-hidden text-ellipsis line-clamp-1">
-                    {Certificates[indexPro - 1]?.name}
-                  </div> */}
-                </div>
-              )}
-              {indexPro == Certificates?.length - 1 ? (
-                <></>
-              ) : (
-                <div
-                  className="px-[15px] h-full flex justify-center items-center ml-[15px] border border-[#ededed] rounded-xl cursor-pointer"
-                  onClick={() => {
-                    if (indexPro != Certificates?.length - 1) {
-                      setAnime(false);
-                      scrollToTop();
-                      setIndexPro(indexPro + 1);
-                    }
-                    console.log(indexPro);
-                  }}
-                >
-                  Next{" "}
-                  {/* <div className="ml-[6px] border-l border-[#ededed] pl-[6px] text-[#6161619e] whitespace-nowrap overflow-hidden text-ellipsis line-clamp-1">
-                    {Certificates[indexPro + 1]?.name}
-                  </div> */}
-                </div>
-              )}
+                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              West Bengal, India
             </div>
-            <div className="mb-[0px] md:mb-[30px] g:mb-[30px]"></div>
           </div>
         </div>
-        {/* <div className="w-full flex-col flex justify-start items-start pt-[20px] md:pt-[50px] lg:pt-[50px]">
-        <ExtraProjects />
-      </div> */}
+        <div
+          className={
+            "text-[35px] font-[DMSr] tracking-tight leading-[45px] ml-[0px] text-[black] " +
+            (anime ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
+          }
+          style={{
+            transition: anime ? ".4s" : "none",
+            transitionDelay: anime ? ".3s" : "0s",
+          }}
+        >
+          Showcasing projects that reflect my creativity, problem-solving, and
+          attention to detail
+        </div>
+        <div
+          className={
+            " mb-[140px] w-full text-[18px] font-[DMSr] mt-[30px] tracking-tight leading-[29px] text-[#5d5d5d]" +
+            (anime ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
+          }
+          style={{
+            transition: anime ? ".4s" : "none",
+            transitionDelay: anime ? ".4s" : "0s",
+          }}
+        >
+          Explore how I approach complex user challenges, craft intuitive
+          interfaces, and deliver impactful solutions.
+        </div>
+        {/* <div
+          className={
+            "w-full text-[12px] justify-start text-[#525252] font-[jetm] tracking-wider uppercase flex mb-[30px]" +
+            (anime2 ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
+          }
+          style={{
+            transition: anime2 ? ".4s" : "none",
+            transitionDelay: anime2 ? ".5s" : "0s",
+          }}
+        >
+          {section == 0 ? (
+            <>Projects</>
+          ) : section == 1 ? (
+            <>Extra Projects</>
+          ) : (
+            <>Upcoming Projects</>
+          )}{" "}
+          <ChevronsLeftRight
+            width="16"
+            height="16"
+            strokeWidth="2"
+            className="ml-[10px] rotate-90 cursor-pointer hover:text-[black]"
+            onClick={() => {
+              if (section + 1 == 3) {
+                setSection(0);
+                setAnime2((anime2) => false);
+                setTimeout(() => {
+                  setAnime2(true);
+                }, 5);
+              } else {
+                setSection((section) => section + 1);
+                setAnime2((anime2) => false);
+                setTimeout(() => {
+                  setAnime2(true);
+                }, 5);
+              }
+            }}
+          />
+        </div> */}
+        <div
+          className={
+            "mb-[200px]" +
+            (anime2 ? " mt-[0px] opacity-100" : " mt-[10px] opacity-0")
+          }
+          style={{
+            transition: anime2 ? ".4s" : "none",
+            transitionDelay: anime2 ? ".5s" : "0s",
+          }}
+        >
+          {Certificates?.map((data, index) => {
+            return (
+              <>
+                <a
+                  target="_blank"
+                  href={data?.link}
+                  key={index}
+                  className="w-full flex flex-col justify-start items-start font-[DMSm] mb-[60px] text-[18px] text-[#7b7b7b] cursor-pointer"
+                >
+                  {/* <span>{data?.name}</span> */}
+                  <div className="w-full text-[12px] justify-start text-[#777777] font-[jetm] tracking-wider uppercase flex mb-[10px]">
+                    {data?.date}
+                  </div>
+                  {/* <div className="mt-[0px] w-full">
+                    <img
+                      className="w-full aspect-video rounded-xl object-fill border-[1.5px] border-[#e6e6e6]"
+                      src={arr[index]}
+                    ></img>
+                  </div>
+                  <div className="w-full h-[100px] bg-gradient-to-b from-transparent to-[white] to-[80%] mt-[-100px]"></div> */}
+                  <div className=" mb-[0px] w-full text-[18px] font-[DMSm] mt-[0px] tracking-tight leading-[29px] text-[#000000]">
+                    {data?.name}
+                  </div>
+                  <div className="mt-[5px] text-[15px] font-[DMSr] leading-[25px] text-[#313131]">
+                    {data?.about}
+                  </div>
+                </a>
+              </>
+            );
+          })}
+        </div>
       </div>
     </>
   );

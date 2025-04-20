@@ -491,51 +491,65 @@ export const Certificates = [
   {
     name: "AWS Fundamentals",
     platform: "Coursera",
-    date: "13th May, 2024",
+    date: "May 13, 2024",
     type: "Professional",
     link: "https://drive.google.com/file/d/1JHtRuySP4SXRr2Kz8Di_tAu0Inam48kd/view?usp=drive_link",
+    about:
+      "Gained foundational knowledge of AWS cloud infrastructure, services, and deployment models.",
   },
   {
     name: "IBM Cybersecurity Analyst",
     platform: "Coursera",
-    date: "13th May, 2024",
+    date: "May 13, 2024",
     type: "Professional",
     link: "https://drive.google.com/file/d/1S0SXKUNJFVoxNi9NUYHGaSJ3gKlczSKH/view?usp=drive_link",
+    about:
+      "Completed a comprehensive program covering key cybersecurity principles, threat analysis, and defense strategies.",
   },
   {
     name: "Microsoft Azure Cloud Service",
     platform: "Coursera",
-    date: "25th Feb, 2024",
+    date: "Feb 25, 2024",
     type: "Beginner",
     link: "https://drive.google.com/file/d/1iQsJG-kME5vJ9P8pkMGfJ2OKbZJRY-Xl/view?usp=drive_link",
+    about:
+      "Acquired hands-on experience with Azure cloud services, deployment, and resource management.",
   },
   {
     name: "React Basics",
     platform: "Coursera",
-    date: "23rd Sept May, 2023",
+    date: "Sept 23, 2023",
     type: "",
     link: "https://drive.google.com/file/d/1N0vfJ_mk4N0249I8i227oBaL-75vmiHJ/view?usp=drive_link",
+    about:
+      "Learned the core concepts of React for building dynamic and responsive user interfaces.",
   },
   {
     name: "CSS, Bootstrap & JavaScript",
     platform: "Udemy",
-    date: "18th Sept, 2023",
+    date: "Sept 18, 2023",
     type: "",
     link: "https://drive.google.com/file/d/1QKJejNDv6ewD1cfcC4RNpDsUD7HvW8jV/view?usp=drive_link",
+    about:
+      "Developed practical front-end skills in styling, layout, and interactivity using modern web technologies.",
   },
   {
     name: "HTML & CSS",
     platform: "Udemy",
-    date: "12th Sept, 2023",
+    date: "Sept 12, 2023",
     type: "",
     link: "https://drive.google.com/file/d/1mFkZnTD9BB9j0p0ee3x2-okuZLcWFpgv/view?usp=drive_link",
+    about:
+      "Gained a solid foundation in web development through structured learning of HTML and CSS.",
   },
   {
     name: "Diversion 2K24",
     platform: "",
-    date: "3-4th Feb, 2024",
+    date: "Feb 3-4, 2024",
     type: "Participation",
     link: "https://drive.google.com/file/d/1y8hXdnSzZTl-GUOfP-SveNWFJEeSEMpJ/view?usp=drive_link",
+    about:
+      "Participated in Diversion 2K24, showcasing innovative thinking and collaboration in a tech-focused event.",
   },
 ];
 

@@ -44,20 +44,20 @@ const Sidebar = (props) => {
   return (
     <>
       <div
-        className="fixed h-[45px] w-[calc(100%-40px)]  md:w-auto lg:w-auto flex justify-center items-center p-[9px] rounded-full left-[50%] bottom-[20px] z-50 bg-[black] text-[white]"
+        className="fixed h-[45px] w-[calc(100%-40px)]  md:w-auto lg:w-auto flex justify-center items-center px-[9px] rounded-full left-[50%] bottom-[20px] z-50 bg-[black] text-[white]"
         style={{ transform: " translateX(-50%)" }}
       >
-        <div className="h-full min-w-[27px] aspect-square rounded-full bg-[#1e1e1e] overflow-hidden">
+        <div className="h-[calc(100%-18px)] min-w-[27px] aspect-square rounded-full bg-[#1e1e1e] overflow-hidden">
           <img className="w-full h-full object-fill" src={user}></img>
         </div>
         <div className="text-[15px] text-[white] font-[DMSm] ml-[8px] whitespace-nowrap">
           Himadri Purkait
         </div>
         <div className="min-h-full border-l-[1.5px] border-[#1b1b1b] mx-[10px]"></div>
-        <div className="flex justify-between items-center w-full">
+        <div className="flex justify-between items-end h-full w-full">
           <div
             className={
-              "text-[#9D9D9D] hover:text-[white] cursor-pointer" +
+              "group text-[#9D9D9D] hover:text-[white] cursor-pointer h-full overflow-visible w-[30px] md:w-[40px] lg:w-[40px] flex flex-col justify-end items-center  " +
               (props?.section == "about" ? " text-[white]" : " text-[#9D9D9D]")
             }
             onClick={() => {
@@ -65,16 +65,19 @@ const Sidebar = (props) => {
               props?.setIndex(0);
             }}
           >
-            <House
-              width={18}
-              height={18}
-              strokeWidth={2.3}
-              className="mr-[8px]"
-            />
+            <div
+              className=" bg-[black] group-hover:opacity-100 opacity-0 group-hover:mb-[3px] mb-[-10px] text-[12px] whitespace-nowrap px-[8px] rounded-full text-[white] py-[3px] z-20"
+              style={{ transition: ".4s" }}
+            >
+              Home
+            </div>
+            <div className="min-h-full flex justify-center items-center z-[60] w-full bg-[black]">
+              <House width={18} height={18} strokeWidth={2.3} className="" />
+            </div>
           </div>
           <div
             className={
-              "text-[#9D9D9D] hover:text-[white] cursor-pointer ml-[8px]" +
+              "group text-[#9D9D9D] hover:text-[white] cursor-pointer h-full overflow-visible w-[30px] md:w-[40px] lg:w-[40px] flex flex-col justify-end items-center  " +
               (props?.section == "project"
                 ? " text-[white]"
                 : " text-[#9D9D9D]")
@@ -86,16 +89,19 @@ const Sidebar = (props) => {
               }
             }}
           >
-            <Folder
-              width={18}
-              height={18}
-              strokeWidth={2.3}
-              className="mr-[8px]"
-            />
+            <div
+              className=" bg-[black] group-hover:opacity-100 opacity-0 group-hover:mb-[3px] mb-[-10px] text-[12px] whitespace-nowrap px-[8px] rounded-full text-[white] py-[3px] z-20"
+              style={{ transition: ".4s" }}
+            >
+              Projects
+            </div>
+            <div className="min-h-full flex justify-center items-center z-[60] w-full bg-[black]">
+              <Folder width={18} height={18} strokeWidth={2.3} className="" />
+            </div>
           </div>
           <div
             className={
-              "text-[#9D9D9D] hover:text-[white] cursor-pointer ml-[8px]" +
+              "group text-[#9D9D9D] hover:text-[white] cursor-pointer h-full overflow-visible w-[30px] md:w-[40px] lg:w-[40px] flex flex-col justify-end items-center  " +
               (props?.section == "aboutme"
                 ? " text-[white]"
                 : " text-[#9D9D9D]")
@@ -107,16 +113,24 @@ const Sidebar = (props) => {
               // }
             }}
           >
-            <UserSearch
-              width={18}
-              height={18}
-              strokeWidth={2.3}
-              className="mr-[8px]"
-            />
+            <div
+              className=" bg-[black] group-hover:opacity-100 opacity-0 group-hover:mb-[3px] mb-[-10px] text-[12px] whitespace-nowrap px-[8px] rounded-full text-[white] py-[3px] z-20"
+              style={{ transition: ".4s" }}
+            >
+              About
+            </div>
+            <div className="min-h-full flex justify-center items-center z-[60] w-full bg-[black]">
+              <UserSearch
+                width={18}
+                height={18}
+                strokeWidth={2.3}
+                className=""
+              />
+            </div>
           </div>
           <div
             className={
-              "text-[#9D9D9D] hover:text-[white] cursor-pointer ml-[8px]" +
+              "group text-[#9D9D9D] hover:text-[white] cursor-pointer h-full overflow-visible w-[30px] md:w-[40px] lg:w-[40px] flex flex-col justify-end items-center  " +
               (props?.section == "certificate"
                 ? " text-[white]"
                 : " text-[#9D9D9D]")
@@ -128,16 +142,24 @@ const Sidebar = (props) => {
               }
             }}
           >
-            <GraduationCap
-              width={18}
-              height={18}
-              strokeWidth={2.3}
-              className="mr-[8px]"
-            />
+            <div
+              className=" bg-[black] group-hover:opacity-100 opacity-0 group-hover:mb-[3px] mb-[-10px] text-[12px] whitespace-nowrap px-[8px] rounded-full text-[white] py-[3px] z-20"
+              style={{ transition: ".4s" }}
+            >
+              Certificates
+            </div>
+            <div className="min-h-full flex justify-center items-center z-[60] w-full bg-[black]">
+              <GraduationCap
+                width={18}
+                height={18}
+                strokeWidth={2.3}
+                className=""
+              />
+            </div>
           </div>
           <div
             className={
-              "text-[#9D9D9D] hover:text-[white] cursor-pointer ml-[8px]" +
+              "group text-[#9D9D9D] hover:text-[white] cursor-pointer h-full overflow-visible w-[30px] md:w-[40px] lg:w-[40px] flex flex-col justify-end items-center " +
               (props?.section == "techstack"
                 ? " text-[white]"
                 : " text-[#9D9D9D]")
@@ -149,12 +171,15 @@ const Sidebar = (props) => {
               // }
             }}
           >
-            <Cpu
-              width={18}
-              height={18}
-              strokeWidth={2.3}
-              className="mr-[8px]"
-            />
+            <div
+              className=" bg-[black] group-hover:opacity-100 opacity-0 group-hover:mb-[3px] mb-[-10px] text-[12px] whitespace-nowrap px-[8px] rounded-full text-[white] py-[3px] z-20"
+              style={{ transition: ".4s" }}
+            >
+              Tech stack
+            </div>
+            <div className="min-h-full flex justify-center items-center z-[60] w-full bg-[black] rounded-r-3xl ">
+              <Cpu width={18} height={18} strokeWidth={2.3} className="" />
+            </div>
           </div>
         </div>
       </div>
@@ -340,7 +365,7 @@ const About = (props) => {
           transitionDelay: anime ? ".5s" : "0s",
         }}
       >
-        <div className="w-full text-[12px] justify-start text-[#525252] font-[jetm] tracking-wider uppercase flex">
+        <div className="w-full text-[12px] justify-start text-[#777777] font-[jetm] tracking-wider uppercase flex">
           My story
         </div>
         <pre className="w-full ml-[0px] whitespace-pre-wrap font-[DMSr] text-[#313131] leading-[25px] mt-[30px]">
@@ -377,7 +402,7 @@ const About = (props) => {
           transitionDelay: anime ? ".7s" : "0s",
         }}
       >
-        <div className="w-full text-[12px] mb-[30px] justify-start text-[#525252] font-[jetm] tracking-wider uppercase flex">
+        <div className="w-full text-[12px] mb-[30px] justify-start text-[#777777] font-[jetm] tracking-wider uppercase flex">
           Projects
         </div>
 
@@ -386,7 +411,9 @@ const About = (props) => {
           href="https://checkyourhealth.vercel.app/"
           className="w-full flex flex-col justify-start items-start font-[DMSm] mb-[80px] text-[18px] text-[#7b7b7b] cursor-pointer"
         >
-          <span>CheckYourHealth</span>
+          <span className="text-[18px] font-[DMSm] text-black">
+            CheckYourHealth
+          </span>
           <div className="mt-[20px] w-full">
             <img
               className="w-full aspect-video rounded-xl object-fill border-[1.5px] border-[#e6e6e6]"
@@ -406,7 +433,9 @@ const About = (props) => {
           href="https://jsonbeautyio.vercel.app/"
           className="w-full flex flex-col justify-start items-start font-[DMSm] mb-[80px] text-[18px] text-[#7b7b7b] cursor-pointer"
         >
-          <span>JSON Beauty</span>
+          <span className="text-[18px] font-[DMSm] text-black">
+            JSON Beauty
+          </span>
           <div className="mt-[20px] w-full">
             <img
               className="w-full aspect-video rounded-xl object-fill border-[1.5px] border-[#e6e6e6]"
@@ -425,7 +454,7 @@ const About = (props) => {
           href="https://splitwiseio.vercel.app/"
           className="w-full flex flex-col justify-start items-start font-[DMSm]  text-[18px] text-[#7b7b7b] cursor-pointer"
         >
-          <span>Splitwise</span>
+          <span className="text-[18px] font-[DMSm] text-black">Splitwise</span>
           <div className="mt-[20px] w-full">
             <img
               className="w-full aspect-video rounded-xl object-fill border-[1.5px] border-[#e6e6e6]"
@@ -502,7 +531,7 @@ const Smartphone = () => {
         section == "techstack" ||
         section == "aboutme" ||
         section == "project" ||
-        section == "aboutme"
+        section == "certificate"
           ? " md:w-[calc(100%-0px)] lg:w-[calc(100%-0px)] fixed"
           : " md:w-[calc(100%-410px)] lg:w-[calc(100%-410px)] fixed")
       }
